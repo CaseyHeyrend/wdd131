@@ -1,1 +1,11 @@
 /* Index Home Page Styling */
+
+body {
+    background-color:#ffdab9;
+    font-size:20px;
+}
+#content {
+    max-width:60%;
+    margin: 40px auto;
+    padding: 50px;
+}
