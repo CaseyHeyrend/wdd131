@@ -9,3 +9,6 @@ body {
     margin: 40px auto;
     padding: 50px;
 }
+#section {
+    display: flex;
+}
