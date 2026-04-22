@@ -10,3 +10,26 @@ body {
     border: 1px solid #ccc;
     padding: 50px;
 }
+# content {
+    background-color: white;
+    width: 600px;
+    padding: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+h1 {
+    text-transform: uppercase;
+    
+}
+p {
+    text-transform: uppercase;
+}
+hr {
+    
+}
+# missionlist {
+    
+}
+.list {
+    
+}
