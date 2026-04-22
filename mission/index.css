@@ -2,3 +2,11 @@
 /* Author: Casey Heyrend */
 
 /* Body styling */
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 50px;
+}
