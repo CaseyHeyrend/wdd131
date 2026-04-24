@@ -56,13 +56,15 @@ h1 {
     font-weight: 400; 
     letter-spacing: 4px; 
     margin: 0; 
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
+    text-transform: uppercase;
 }
 .school { 
     color: #005596; 
     font: 0.85rem Arial, sans-serif; 
     letter-spacing: 3px; 
-    margin: 10px 0; 
+    margin: 10px 0;
+    text-transform: uppercase;
 }
 hr { 
     border: 0; 
