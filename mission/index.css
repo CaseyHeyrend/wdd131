@@ -18,16 +18,19 @@ body {
     text-align: center;
     border: 1px solid #ddd;
 }
+/* Heading and school name styling */
 h1 {
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 .school {
     text-transform: uppercase;
 }
-/*hr {
+/* Hr styling */
+/* hr {
     
 }
+/* Statement and list styling */
+/*
 #statement {
     
 }
