@@ -76,13 +76,13 @@ ol li {
     margin-bottom: 1.2rem; 
     padding-left: 10px; 
 }
-.logo { 
+img { 
     color: #005596; 
     font: 900 3rem Arial, sans-serif; 
     margin-top: 50px; 
     letter-spacing: -2px; 
 }
-.logo span { 
+img span { 
     display: block; 
     font: 400 1.5rem Arial; 
     letter-spacing: 6px; 
