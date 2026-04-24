@@ -2,7 +2,7 @@
 /* Author: Casey Heyrend */
 
 /* Body styling */
-body {
+/*body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     max-width: 600px;
@@ -11,20 +11,20 @@ body {
     padding: 50px;
 }
 /* Content styling */
-#content {
+/*#content {
     background-color: white;
     width: 600px;
     padding: 60px;
     text-align: center;
     border: 1px solid #ddd;
-}
+}/*
 /* Heading and school name styling */
-h1 {
+/*h1 {
     text-transform: uppercase;    
-}
+}/*
 .school {
     text-transform: uppercase;
-}
+}*/
 /* Hr styling */
 /* hr {
     
@@ -37,3 +37,54 @@ h1 {
 .list {
     
 }*/
+body { 
+    display: grid; 
+    place-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background: #fff; 
+    font: 1.1rem/1.6 "Times New Roman", serif; 
+}
+#content { 
+    max-width: 700px; 
+    padding: 40px; 
+    border: 1px solid #eee; 
+}
+h1, .school, .logo { 
+    text-align: center; 
+}
+h1 { 
+    font-weight: 400; 
+    letter-spacing: 4px; 
+    margin: 0; 
+    font-size: 2.2rem; 
+}
+.school { 
+    color: #005596; 
+    font: 0.85rem Arial, sans-serif; 
+    letter-spacing: 3px; 
+    margin: 10px 0; 
+}
+hr { 
+    border: 0; 
+    border-top: 1px solid #ddd; 
+    width: 85%; 
+    margin: 20px auto; 
+}
+ol li { 
+    margin-bottom: 1.2rem; 
+    padding-left: 10px; 
+}
+.logo { 
+    color: #005596; 
+    font: 900 3rem Arial, sans-serif; 
+    margin-top: 50px; 
+    letter-spacing: -2px; 
+}
+.logo span { 
+    display: block; 
+    font: 400 1.5rem Arial; 
+    letter-spacing: 6px; 
+    border-top: 2px solid #005596; 
+    padding-top: 5px; 
+    margin-top: 5px; }
