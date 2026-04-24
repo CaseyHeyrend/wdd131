@@ -10,7 +10,8 @@ body {
     border: 1px solid #ccc;
     padding: 50px;
 }
-# content {
+/* Content styling */
+#content {
     background-color: white;
     width: 600px;
     padding: 60px;
@@ -21,15 +22,15 @@ h1 {
     text-transform: uppercase;
     
 }
-p {
+.school {
     text-transform: uppercase;
 }
-hr {
+/*hr {
     
 }
-# missionlist {
+#statement {
     
 }
 .list {
     
-}
+}*/
