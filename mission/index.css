@@ -1,7 +1,7 @@
 /* CSS for Mission Statement */
 /* Author: Casey Heyrend */
 
-/* Body styling */
+
 /*body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -16,76 +16,66 @@
     padding: 60px;
     text-align: center;
     border: 1px solid #ddd;
-}/*
-/* Heading and school name styling */
-/*h1 {
-    text-transform: uppercase;    
-}/*
-.school {
-    text-transform: uppercase;
-}*/
-/* Hr styling */
-/* hr {
-    
-}
-/* Statement and list styling */
-/*
-#statement {
-    
-}
-.list {
-    
-}*/
+
+*/
+/* Body styling */
 body { 
     display: grid; 
     place-items: center; 
     min-height: 100vh; 
     margin: 0; 
-    background: #fff; 
-    font: 1.1rem/1.6 "Times New Roman", serif; 
+    background: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem; 
 }
+/* Content styling */
 #content { 
-    max-width: 700px; 
-    padding: 40px; 
-    border: 1px solid #FFFFFF; 
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 60px;
+    border: 1px solid #B8B8B8;
+    background-color: #FFFFFF;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    line-height: 1.6;
 }
-h1, .school, .logo { 
-    text-align: center; 
-}
+/* Heading styling */
 h1 { 
-    font-weight: 400; 
-    letter-spacing: 4px; 
-    margin: 0; 
-    font-size: 2.2rem;
+    text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: normal;   
 }
-.school { 
-    color: #438DC7; 
-    font: 0.85rem Arial, sans-serif; 
-    letter-spacing: 3px; 
-    margin: 10px 0;
+/* School name styling */
+.school {
+    text-align: center; 
     text-transform: uppercase;
+    color: #438DC7; /* BYU Idaho blue */
+    
 }
 hr { 
-    border: 0; 
     border-top: 1px solid #DEDEDE; 
     width: 85%; 
     margin: 20px auto; 
 }
-ol li { 
-    margin-bottom: 1.2rem; 
-    padding-left: 10px; 
+p {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 30px;
+}
+#statement { 
+    text-align: left;
+    padding-left: 20px;
+}
+.list { 
+    list-style-type: disc; 
+    padding-left: 40px;
+    margin-bottom: 1.2rem;  
 }
 img { 
-    color: #005596; 
-    font: 900 3rem Arial, sans-serif; 
-    margin-top: 50px; 
-    letter-spacing: -2px; 
-}
-img span { 
+    text-align: center;
     display: block; 
-    font: 400 1.5rem Arial; 
-    letter-spacing: 6px; 
-    border-top: 2px solid #005596; 
-    padding-top: 5px; 
-    margin-top: 5px; }
+    margin: 30px auto 0; 
+    width: 150px; 
+}
