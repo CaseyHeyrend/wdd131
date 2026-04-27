@@ -72,3 +72,59 @@ To use JavaScript in a webpage, you connect it to your HTML so the browser can r
 <script src="script.js" defer></script>
 document.getElementById("title").textContent = "Hello, JavaScript!";
 
+What JavaScript can do on a webpage
+Once connected, JavaScript can:
+* Change text, styles, and HTML
+* Respond to clicks and user input
+* Show/hide elements
+* Fetch data from servers
+
+## What are common problems that can occur when using Javascript?
+JavaScript is powerful, but it’s also easy to trip over a few common issues—especially when you’re working in the browser.
+1. “Cannot read properties of null”
+document.getElementById("title").textContent = "Hi";
+
+2. Wrong selectors (IDs/classes don’t match)
+<h1 id="header"></h1>
+document.getElementById("title")
+
+3. Event listeners not working
+button.addEventListener("click", doSomething);
+
+4. Variable issues (let, const, var)
+JavaScript is picky.
+const x = 5;
+x = 10; // ❌ error
+
+5. Typos and syntax errors
+console.log("Hello"   // ❌ missing )
+
+6. Logic errors (code runs, but wrong result)
+These are harder to catch because nothing crashes.
+if (x = 5) {  // ❌ assignment instead of comparison
+
+7. Asynchronous confusion
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+8. Browser compatibility issues
+Different browsers (like Google Chrome vs Safari) may behave slightly differently, especially with newer features.
+
+9. Overwriting values accidentally
+element.style.color = "red";
+element.style.color = "blue";
+element.style.color = "green";
+
+10. Console errors ignored
+The browser console is your best friend.
+
+Open DevTools: 
+- Right click → Inspect → Console
+
+11. Bottom line
+Most JavaScript problems come down to:
+* Timing (when code runs)
+* Targeting (wrong element)
+* Syntax (small mistakes)
+* Logic (code does the wrong thing)
