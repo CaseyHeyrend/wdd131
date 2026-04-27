@@ -93,3 +93,71 @@ You don’t “write HTML” directly—you build elements as objects and attach
 
 ## How can I add or remove attributes from elements in the DOM?
     You can add, change, or remove attributes in the DOM using a few built-in JavaScript methods. Think of attributes as things inside HTML tags like id, class, src, href, etc.
+
+1. Add or change attributes
+
+    let img = document.querySelector("img");
+
+    img.setAttribute("src", "new-image.jpg");
+    img.setAttribute("alt", "A new image");
+
+    img.src = "new-image.jpg";
+    img.alt = "A new image";
+
+2. Remove attributes
+
+    img.removeAttribute("alt");
+
+3. Check or get attributes
+
+    img.getAttribute("src");     // gets value
+    img.hasAttribute("alt");     // true or false
+
+4. Special case: classes
+
+    let box = document.querySelector(".box");
+
+    // Add a class
+    box.classList.add("active");
+
+    // Remove a class
+    box.classList.remove("active");
+
+    // Toggle (add if missing, remove if present)
+    box.classList.toggle("active");
+
+## Are there any other ways to do this?
+    Yeah—there are a few other (and often better) ways to work with attributes beyond setAttribute() and removeAttribute(). Some are more modern, cleaner, or specialized for certain use cases.
+
+1. Direct property access (most common)
+
+    element.setAttribute("id", "main");
+
+    element.id = "main";
+
+    input.value = "Hello";
+    img.src = "image.png";
+    checkbox.checked = true;
+
+
+2. className (older alternative to classList)
+
+    element.className = "box active";
+
+3. dataset (for custom data attributes)
+
+    <div id="card" data-user="casey" data-role="admin"></div>
+
+    let card = document.getElementById("card");
+
+    card.dataset.user = "alex";     // change
+    card.dataset.role = "editor";   // add
+    delete card.dataset.role;       // remove
+4. Toggle attributes
+
+    element.toggleAttribute("hidden");
+
+5. Using attributes collection (less common)
+
+    element.attributes["id"].value = "newId";
+    console.log(element.attributes);
