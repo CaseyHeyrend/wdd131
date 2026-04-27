@@ -39,9 +39,10 @@ JavaScript exploded in popularity and capability:
 * Node.js (2009) allowed JavaScript to run on servers
 * Frameworks like React, Angular, and Vue.js made building complex apps easier
 * Annual updates to ECMAScript added modern features (ES6 in 2015 was a huge upgrade)
-
-## Today
+### Today
 JavaScript is now:
 * One of the most widely used languages in the world
 * Used for websites, servers, mobile apps, games, and more
 * A core part of nearly every modern web experience
+
+
