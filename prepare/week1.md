@@ -45,4 +45,30 @@ JavaScript is now:
 * Used for websites, servers, mobile apps, games, and more
 * A core part of nearly every modern web experience
 
+## What is the difference between javascript and ecmascript? (Ecmascript was mentioned in the last response)
+Good question—this confuses a lot of people because the terms are often used interchangeably, but they’re not the same thing.
+The simple idea
+- JavaScript = the actual programming language you use
+- ECMAScript = the official standard/specification that defines how JavaScript should work
+
+ECMAScript is like a rulebook, and JavaScript is a game built using that rulebook.
+
+ECMAScript = the blueprint
+JavaScript = the working language built from that blueprint + extra features
+
+## How can I use Javascript in a webpage?
+1. Inline JavaScript (inside HTML)
+To use JavaScript in a webpage, you connect it to your HTML so the browser can run it.
+<button onclick="alert('Hello!')">Click me</button>
+
+2. Internal JavaScript (<script> tag)
+<h1 id="title">Hello</h1>
+
+<script>
+  document.getElementById("title").textContent = "Hello, JavaScript!";
+</script>
+
+3. External JavaScript file (best practice)
+<script src="script.js" defer></script>
+document.getElementById("title").textContent = "Hello, JavaScript!";
 
