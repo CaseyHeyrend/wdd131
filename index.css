@@ -18,3 +18,20 @@ body {
     list-style: none;
     
 }
+/* Navbar Styling */
+nav {
+    background-color: #ff7f50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Daniel', sans-serif;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+nav a:hover {
+    color: #ffdab9;
+}
