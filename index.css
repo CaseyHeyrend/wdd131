@@ -3,12 +3,22 @@
 body {
     background-color:#ffdab9;
     font-size:20px;
+    
 }
+/* Header Styling */
 #content {
     max-width:60%;
     margin: 40px auto;
     padding: 50px;
 }
+header {
+    justify-content: center;
+}
+h1 {
+    font-family: 'Daniel', sans-serif;
+    text-align: center;
+}
+/* Section Styling */
 #section {
     line-height: 1.5em;
     margin: 0 auto;
@@ -18,7 +28,7 @@ body {
     list-style: none;
     
 }
-/* Navbar Styling */
+/* Nav Styling */
 nav {
     background-color: #ff7f50;
     padding: 10px;
@@ -34,4 +44,15 @@ nav a {
 }
 nav a:hover {
     color: #ffdab9;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff7f50;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+
 }
