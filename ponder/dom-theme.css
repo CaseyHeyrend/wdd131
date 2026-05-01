@@ -1,10 +1,13 @@
 
 body {
-    background-size: 100vw 100vh;
+    background-size: 100vw 100vh;/* Ensure the background covers the entire viewport */
     margin: 0;
     padding: 20px;
     transition: background-image 1s ease;
+    /* background-image: url(/images/web.png);
+    font-size: 20px;*/
 }
+ 
 
 .container {
     text-align: center;
