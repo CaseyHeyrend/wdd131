@@ -10,7 +10,16 @@ body {
     background: #FFFFFF;
     font-family: "Times New Roman", Times, serif;
     font-size: 1.1rem; 
+    /* Light Mode*/
+    background-color: white;
+    transition:0.3s;
 }
+/* Dark Mode */
+body.dark {
+    background-color:#222;
+    color:#eee;
+}
+
 /* Content styling */
 #content { 
     max-width: 800px;
