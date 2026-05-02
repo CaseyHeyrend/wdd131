@@ -1,8 +1,14 @@
 /* Index Home Page Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
-    background-color:#ffdab9;
+    background-color:#AFEEEE;/* Pale Turquoise */
     font-size:20px;
+    display: flex;
+    flex-direction: column;
     
 }
 /* Header Styling */
@@ -10,6 +16,8 @@ body {
     max-width:60%;
     margin: 40px auto;
     padding: 50px;
+    flex: 1;
+
 }
 header {
     justify-content: center;
@@ -30,26 +38,27 @@ h1 {
 }
 /* Nav Styling */
 nav {
-    background-color: #ff7f50;
+    background-color: #E0FFFF;/*Light Cyan*/
     padding: 10px;
     display: flex;
     justify-content: space-around;
     font-family: 'Daniel', sans-serif;
+    
 }
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
 }
 nav a:hover {
-    color: #ffdab9;
+    color: #AFEEEE;/*Pale Turquoise*/
 }
 
 /* Footer Styling */
 footer {
-    background-color: #ff7f50;
-    /*position: absolute;*/
+    background-color: #E0FFFF;/*Light Cyan */
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
