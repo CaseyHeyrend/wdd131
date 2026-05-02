@@ -7,11 +7,15 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == 'dark') {
-        document.body.classList.add('dark');// Dark
         // code for changes to colors and logo
+        document.body.classList.add('dark');
+        //https://wddbyui.github.io/wdd131/images/byui-logo-white.png
+        logo.src = 'https://wddbyui.github.io/wdd131/images/byui-logo-white.png';
     } else {
-        document.body.classList.remove('dark'); // White and bright
         // code for changes to colors and logo
+        document.body.classList.remove('dark'); // White and bright
+        logo.src = 'https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp';
+        
     }
 }           
                     
