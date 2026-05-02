@@ -26,7 +26,7 @@ body.dark {
     margin: 40px auto; 
     padding: 60px;
     border: 1px solid #B8B8B8;
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     line-height: 1.6;
 }
 /* Heading styling */
