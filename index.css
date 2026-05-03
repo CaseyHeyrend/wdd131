@@ -9,7 +9,7 @@ body {
     font-size:20px;
     display: flex;
     flex-direction: column;
-    
+
 }
 /* Header Styling */
 #content {
@@ -34,7 +34,7 @@ h1 {
 }
 .assignment {
     list-style: none;
-    
+
 }
 /* Nav Styling */
 nav {
@@ -43,7 +43,7 @@ nav {
     display: flex;
     justify-content: space-around;
     font-family: 'Daniel', sans-serif;
-    
+
 }
 nav a {
     color: black;
