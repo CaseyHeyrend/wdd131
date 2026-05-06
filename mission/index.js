@@ -9,11 +9,11 @@ function changeTheme() {
         if (current == 'dark') {
                 // code for changes to colors and logo
                 document.body.classList.add('dark');
-                logo.setAttribute('src', '/images/byui-logo-white.png');
+                logo.setAttribute('src', 'images/byui-logo-white.png');
             } else {
                 // code for changes to colors and logo
                 document.body.classList.remove('dark'); // White and bright
-                logo.setAttribute('src', '/images/byui-logo-blue.webp');
+                logo.setAttribute('src', 'images/byui-logo-blue.webp');
 
             }
         }
