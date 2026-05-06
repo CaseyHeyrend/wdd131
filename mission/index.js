@@ -2,8 +2,6 @@
 let selectElem = document.querySelector('select');
 let logo = document.querySelector('img');
 
-
-
 function changeTheme() {
         let current = selectElem.value;
         if (current == 'dark') {
