@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+/* base styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,34 +7,33 @@ body {
 }
 
 header {
-    background-color: #2b78e4; /* The blue header color */
+    background-color: #2b78e4;
     color: white;
     padding: 15px 0;
 }
 
-/* --- Navigation & Checkbox Hack --- */
-#menu-btn { display: none; } /* Hide the actual checkbox */
-
-.menu-label {
-    display: block;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 10px;
-}
-
+/* Navigation Styles */
 nav {
     display: none; /* Hidden by default on mobile */
     background-color: #2b78e4;
 }
-
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
+.menu-list {
+    display: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}
 
-/* --- Gallery Layout --- */
+/* Gallery Layout  */
 .gallery {
     display: grid;
     grid-template-columns: 1fr; /* 1 Column (Mobile) */
@@ -45,27 +44,34 @@ nav a {
 
 .gallery img {
     width: 100%;
-    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
     border: 5px solid white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Ensures border doesn't add to the width */
 }
 
-/* --- Tablet View (approx 600px+) --- */
-@media (min-width: 600px) {
+/*  Tablet View */
+@media (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 2 Columns */
     }
 }
 
-/* --- Desktop View (approx 900px+) --- */
-@media (min-width: 900px) {
+/*  Desktop View   */
+@media (min-width: 1000px) {
 
-    .menu-label { display: none; }
     
     nav {
-        display: flex;
-        justify-content: center;
+        display: flex; /* Show nav on desktop */
+        justify-content: space-around;
         gap: 20px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .gallery {
