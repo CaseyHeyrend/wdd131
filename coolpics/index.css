@@ -23,9 +23,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
-p {
-    display: none;
-}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -62,7 +60,7 @@ nav ul {
 /*  Desktop View   */
 @media (min-width: 1000px) {
 
-    p { 
+    .menu-label { 
         display: none; 
     }
     nav {
