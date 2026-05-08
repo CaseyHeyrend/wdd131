@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     width: 55%;
 }
-.assignment {
+.assignment li {
     list-style: none;
 
 }
