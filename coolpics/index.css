@@ -23,7 +23,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
-.menu-list {
+p {
     display: none;
 }
 nav ul {
@@ -62,7 +62,9 @@ nav ul {
 /*  Desktop View   */
 @media (min-width: 1000px) {
 
-    
+    p { 
+        display: none; 
+    }
     nav {
         display: flex; /* Show nav on desktop */
         justify-content: space-around;
