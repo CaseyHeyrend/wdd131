@@ -58,10 +58,12 @@ nav a:hover {
 /* Footer Styling */
 footer {
     background-color: #E0FFFF;/*Light Cyan */
-    position: absolute;
+    /*position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 0;*/
+    padding: 10px;
+    display: flex;
     text-align: center;
 
 }
