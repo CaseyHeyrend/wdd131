@@ -50,6 +50,14 @@ nav ul {
     box-sizing: border-box; /* Ensures border doesn't add to the width */
 }
 
+footer {
+    background-color: #2b78e4;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
 /*  Tablet View */
 @media (min-width: 700px) {
     .gallery {
@@ -81,9 +89,3 @@ nav ul {
     }
 }
 
-footer {
-    background-color: #2b78e4;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
