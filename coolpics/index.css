@@ -1,3 +1,9 @@
+/* CSS for Cool Pics Gallery */
+/*
+    This CSS file styles the Cool Pics Gallery webpage, ensuring a responsive design that adapts to different screen sizes. 
+    It includes base styles for the body, header, navigation, gallery layout, and footer. 
+    Media queries are used to adjust the layout for tablet and desktop views.
+*/
 /* base styles */
 body {
     margin: 0;
