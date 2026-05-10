@@ -68,7 +68,10 @@ footer {
 @media (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 2 Columns */
+        justify-content: space-around;
+        gap: 30px 80px;
     }
+
 }
 
 /*  Desktop View   */
@@ -92,6 +95,8 @@ footer {
         grid-template-columns: 1fr 1fr 1fr; /* 3 Columns */
         max-width: 1000px;
         margin: 0 auto;
+        justify-content: space-around;
+        gap: 30px 50px;
     }
 }
 
