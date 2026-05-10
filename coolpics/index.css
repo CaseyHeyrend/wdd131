@@ -8,12 +8,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #d3d3d3; /* Light grey background from image.png */
+    background-color: #CCCCCC; /* Light grey background from the example */
     text-align: center;
 }
 
 header {
-    background-color: #2b78e4;
+    background-color: #2981E2;/* Blue header from the example */
     color: white;
     padding: 15px 0;
 }
@@ -21,7 +21,7 @@ header {
 /* Navigation Styles */
 nav {
     display: none; /* Hidden by default on mobile */
-    background-color: #2b78e4;
+    background-color: #2981E2;/* Same blue as header for consistency */
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav ul {
 }
 
 footer {
-    background-color: #2b78e4;
+    background-color: #2981E2; /* Same blue as header for consistency */
     color: white;
     padding: 10px;
     margin-top: 20px;
