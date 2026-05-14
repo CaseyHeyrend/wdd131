@@ -19,6 +19,13 @@ header {
 }
 
 /* Navigation Styles */
+#menu-button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
 nav {
     display: none; /* Hidden by default on mobile */
     flex-direction: column;
@@ -33,12 +40,8 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style-type: none;
+nav a:hover {
+    background-color: #1A5BB8; /* Darker blue on hover */
 }
 
 /* Gallery Layout  */
@@ -80,10 +83,10 @@ footer {
 
 /*  Desktop View   */
 @media (min-width: 1000px) {
-
-    .menu-label { 
-        display: none; 
+    #menu-button {
+        display: none; /* Hide menu button on desktop */
     }
+
     nav {
         display: flex !important; /* Show nav on desktop */
         flex-direction: row;
