@@ -21,7 +21,11 @@ header {
 /* Navigation Styles */
 nav {
     display: none; /* Hidden by default on mobile */
+    flex-direction: column;
     background-color: #2981E2;/* Same blue as header for consistency */
+}
+nav.open {
+    display: flex; /* Show nav when open */
 }
 
 nav a {
@@ -48,7 +52,7 @@ nav ul {
 
 .gallery img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;/* Ensures images are square */
     object-fit: cover;
     object-position: center;
     border: 5px solid white;
@@ -81,14 +85,10 @@ footer {
         display: none; 
     }
     nav {
-        display: flex; /* Show nav on desktop */
-        justify-content: space-around;
-        gap: 20px;
-    }
-    nav ul {
-        display: flex;
+        display: flex !important; /* Show nav on desktop */
         flex-direction: row;
         justify-content: center;
+        gap: 20px;
     }
 
     .gallery {
