@@ -21,7 +21,7 @@ header {
 /* Navigation Styles */
 #menu-button {
     background: none;
-    border: 1px solid white;
+    border: none;
     color: white;
     padding: 5px 15px;
     cursor: pointer;
