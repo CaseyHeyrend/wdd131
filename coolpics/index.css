@@ -5,17 +5,25 @@ It includes base styles for the body, header, navigation, gallery layout, and fo
 Media queries are used to adjust the layout for tablet and desktop views.
 */
 /* base styles */
-body {
+/* Reset default margins and paddings, set font and background color */
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     font-family: Arial, sans-serif;
     background-color: #CCCCCC; /* Light grey background from the example */
     text-align: center;
 }
-
+/* Header Styles */
 header {
     background-color: #2981E2;/* Blue header from the example */
     color: white;
-    padding: 15px 0;
+    padding: 1rem;
+}
+header h1 {
+margin-bottom: 0.5rem;
 }
 
 /* Navigation Styles */
@@ -46,8 +54,6 @@ nav a:hover {
 
 /* Gallery Layout */
 .gallery {
-    max-width: 1000px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr; /* 1 Column (Mobile) */
     gap: 20px;
@@ -56,8 +62,9 @@ nav a:hover {
 }
 
 figure img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     padding: 5px;
@@ -98,7 +105,7 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 2 Columns */
         justify-content: space-around;
-        gap: 10px 30px;
+        gap: 20px 30px;
     }
 
 }
@@ -121,7 +128,7 @@ footer {
         max-width: 1000px;
         margin: 0 auto;
         justify-content: space-around;
-        gap: 10px 10px;
+        gap: 20px 40px;
     }
     dialog img {
         width: 60%;
