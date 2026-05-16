@@ -1,8 +1,8 @@
 /* CSS for Cool Pics Gallery */
 /*
-    This CSS file styles the Cool Pics Gallery webpage, ensuring a responsive design that adapts to different screen sizes. 
-    It includes base styles for the body, header, navigation, gallery layout, and footer. 
-    Media queries are used to adjust the layout for tablet and desktop views.
+This CSS file styles the Cool Pics Gallery webpage, ensuring a responsive design that adapts to different screen sizes.
+It includes base styles for the body, header, navigation, gallery layout, and footer.
+Media queries are used to adjust the layout for tablet and desktop views.
 */
 /* base styles */
 body {
@@ -44,8 +44,10 @@ nav a:hover {
     background-color: #1A5BB8; /* Darker blue on hover */
 }
 
-/* Gallery Layout  */
+/* Gallery Layout */
 .gallery {
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr; /* 1 Column (Mobile) */
     gap: 20px;
@@ -53,14 +55,34 @@ nav a:hover {
     justify-items: center;
 }
 
-.gallery img {
-    width: 100%;
-    aspect-ratio: 1 / 1;/* Ensures images are square */
+figure img {
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    padding: 5px;
     object-position: center;
-    border: 5px solid white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     box-sizing: border-box; /* Ensures border doesn't add to the width */
+    margin: 0 auto;
+}
+/* Modal Styles */
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
 }
 
 footer {
@@ -76,7 +98,7 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 2 Columns */
         justify-content: space-around;
-        gap: 30px 80px;
+        gap: 10px 30px;
     }
 
 }
@@ -99,7 +121,21 @@ footer {
         max-width: 1000px;
         margin: 0 auto;
         justify-content: space-around;
-        gap: 30px 50px;
+        gap: 10px 10px;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;    
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
     }
 }
-
