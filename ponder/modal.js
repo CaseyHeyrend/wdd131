@@ -7,19 +7,28 @@ const closeButton = modal.querySelector('.close-viewer');
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
-    
-// Code to show modal  - Use event parameter 'e'   
-    
-}
-// Close modal on button click
-closeButton.addEventListener('click', () => {
-    modal.close();
+        console.log(e.target); // Debugging log
+
+        const img = e.target;
+        const src = img.getAttribute('src');
+        const alt = img.getAttribute('alt');
+        const full = src.replace('sm', 'full'); // Assuming the full image has 'full' in its filename
+
+        modalImage.src = full;
+        modalImage.alt = alt;
+
+        modal.showModal();
+
+
+    }
+    // Close modal on button click
+    closeButton.addEventListener('click', () => {
+        modal.close();
 });
 
 // Close modal if clicking outside the image
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
-        modal.close();
-    }
+            modal.close();
+        }
 });
-          

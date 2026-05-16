@@ -12,19 +12,27 @@ menuButton.addEventListener('click', () => {
 
 gallery.addEventListener('click', openModal);
 
+
 function openModal(e) {
-    if (e.target.tagName === 'IMG') {
-        modalImage.src = e.target.src;
+        console.log(e.target);
+
+        const img = e.target;
+        const src = img.getAttribute('src');
+        const alt = img.getAttribute('alt');
+        const full = src.replace('sm', 'full');
+
+        modalImage.src = full;
+        modalImage.alt = alt;
+
         modal.showModal();
     }
-}
 
-// Event listener for the close button
-closeButton.addEventListener('click', () => {
-    modal.close();
+    // Event listener for the close button
+    closeButton.addEventListener('click', () => {
+        modal.close();
 });
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
-        modal.close();
-    }
+            modal.close();
+        }
 });
