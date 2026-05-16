@@ -30,6 +30,7 @@ header {
 h1 {
     font-family: 'Daniel', sans-serif;
     text-align: center;
+    padding: 30px;
 }
 /* Section Styling */
 #section {
