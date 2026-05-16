@@ -27,13 +27,6 @@ margin-bottom: 0.5rem;
 }
 
 /* Navigation Styles */
-#menu-button {
-    background: none;
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    cursor: pointer;
-}
 nav {
     display: none; /* Hidden by default on mobile */
     flex-direction: column;
@@ -48,22 +41,32 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
-nav a:hover {
-    background-color: #1A5BB8; /* Darker blue on hover */
-}
 
+/* Menu Button Styles */
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+main h2 {
+    margin-bottom: 1rem;
+}
 /* Gallery Layout */
 .gallery {
     display: grid;
     grid-template-columns: 1fr; /* 1 Column (Mobile) */
     gap: 20px;
-    padding: 20px;
     justify-items: center;
 }
 
 figure img {
     width: 100%;
-    max-width: 300px;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -71,7 +74,6 @@ figure img {
     object-position: center;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     box-sizing: border-box; /* Ensures border doesn't add to the width */
-    margin: 0 auto;
 }
 /* Modal Styles */
 dialog img {
