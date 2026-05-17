@@ -1,0 +1,99 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fcfbf9;
+    color: #333;
+}
+/* Header & Navigation */
+header {
+    text-align: center;
+    border-bottom: 2px solid #f3e5d8;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: #b33939;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* First Post */
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+/* Meta Information */
+.post-meta {
+    text-align: right; /* Aligned right on mobile matching the mockup */
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.post-meta .meta-item {
+    margin: 4px 0;
+}
+/* Main Content */
+.post-content h2 {
+    color: #b33939;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.book-cover {
+    max-width: 150px;
+    height: auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+/* Footer */
+footer {
+    text-align: center;
+    border-top: 2px solid #f3e5d8;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+}
+/* Desktop Layout */
+@media (min-width: 800px) {
+    .post {
+        display: grid;
+        /* Left column for meta (200px), right column for content (1fr) */
+        grid-template-columns: 200px 1fr; 
+        gap: 40px;
+        align-items: start;
+    }
+
+    .post-meta {
+        text-align: right;
+        /* Adds the vertical separating line seen in the desktop mockup */
+        border-right: 1px solid #f3e5d8; 
+        padding-right: 20px;
+    }
+
+    .book-details {
+        flex-direction: row; /* Horizontal alignment for book + text */
+        align-items: flex-start;
+    }
+}
