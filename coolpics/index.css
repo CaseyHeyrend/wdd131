@@ -49,6 +49,7 @@ nav a {
     color: white;
     padding: 5px 15px;
     cursor: pointer;
+    font-size: 20px;
 }
 /* Main Content Styles */
 main {
@@ -107,6 +108,9 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 2 Columns */
         gap: 20px 10px;
+    }
+    #menu-button {
+        font-size: 20px;
     }
 
 }
