@@ -26,7 +26,10 @@ header h1 {
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
+    padding: 15px 30px;
+    border-top: 1px solid #d9a46c;
+    border-bottom: 1px solid #d9a46c;
     font-family: Arial, sans-serif;
 }
 
