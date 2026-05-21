@@ -40,7 +40,7 @@ nav a {
 }
 /* Meta Information */
 .post-meta {
-    text-align: right; /* Aligned right on mobile matching the mockup */
+    text-align: right; 
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -50,7 +50,7 @@ nav a {
 }
 /* Main Content */
 .post-content h2 {
-    color: #B52F4F;/* Matching the Crimson from the mockup */
+    color: #B52F4F;/*  Crimson*/
     font-size: 1.5rem;
     margin-top: 0;
 }
@@ -76,10 +76,9 @@ footer {
     font-size: 0.9rem;
 }
 /* Desktop Layout */
-@media (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .post {
         display: grid;
-        /* Left column for meta (200px), right column for content (1fr) */
         grid-template-columns: 200px 1fr; 
         gap: 40px;
         align-items: start;
@@ -87,13 +86,12 @@ footer {
 
     .post-meta {
         text-align: right;
-        /* Adds the vertical separating line seen in the desktop mockup */
         border-right: 1px solid #f3e5d8; 
         padding-right: 20px;
     }
 
     .book-details {
-        flex-direction: row; /* Horizontal alignment for book + text */
+        flex-direction: row;
         align-items: flex-start;
     }
 }
