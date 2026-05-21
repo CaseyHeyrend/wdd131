@@ -49,14 +49,12 @@ nav a {
 }
 
 /* First Post */
-.post article {
+
+.post {
+  border-top: 2px solid #F2D6B7;/* Light Peach */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
-}
-.post {
-  border-top: 2px solid #F2D6B7;/* Light Peach */
   margin: 20px auto;
   max-width: 1000px;
   padding: 30px;
