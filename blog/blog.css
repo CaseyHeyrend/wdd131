@@ -108,12 +108,14 @@ footer {
   .container {
     max-width: 1000px;
   }
+  #mobile-only {
+    border-top: none;
+  }
   .post {
     display: grid;
     grid-template-columns: 180px 1fr;
     gap: 40px;
     align-items: start;
-    border-top: none;
   }
 
   .post-meta {
