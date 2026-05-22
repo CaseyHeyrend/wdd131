@@ -38,8 +38,8 @@ nav {
   justify-content: flex-end;
   gap: 30px;
   padding: 15px 30px;
-  border-top: 2px solid #F2D6B7;/* Light Peach */
-  border-bottom: 2px solid #F2D6B7;/* Light Peach */
+  border-top: 3px solid #F2D6B7;/* Light Peach */
+  border-bottom: 3px solid #F2D6B7;/* Light Peach */
 }
 
 nav a {
@@ -49,9 +49,11 @@ nav a {
 }
 
 /* First Post */
-
+#mobile-only {
+  border-top: 2px solid #d9a46c;/* Light Peach */
+  
+}
 .post {
-  border-top: 2px solid #F2D6B7;/* Light Peach */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -59,6 +61,7 @@ nav a {
   max-width: 1000px;
   padding: 30px;
 }
+
 /* Meta Information */
 .post-meta {
   text-align: right;
@@ -94,7 +97,7 @@ nav a {
 /* Footer */
 footer {
   text-align: center;
-  border-top: 2px solid #F2D6B7;/* Light Peach */
+  border-top: 2px solid #d9a46c;/* Light Peach */
   margin-top: 40px;
   padding-top: 15px;
   font-size: 0.9rem;
@@ -117,6 +120,7 @@ footer {
     border-right: 2px solid #d9a46c;
     padding-right: 20px;
     margin-bottom: 0;
+    min-height: 450px;
   }
 
   .book-cover {
