@@ -7,7 +7,6 @@ const closeButton = modal.querySelector('.close-viewer');
 
 
 
-
 gallery.addEventListener('click', openModal);
 
 
@@ -24,13 +23,11 @@ function openModal(e) {
 
         modal.showModal();
     }
-
     menuButton.addEventListener('click', () => {
         navMenu.classList.toggle('open');
 });
-menuButton.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-});
+
+
 
 // Event listener for the close button
 closeButton.addEventListener('click', () => {
