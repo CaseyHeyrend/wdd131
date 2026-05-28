@@ -38,12 +38,11 @@ const articles = [
 		stars: "⭐⭐⭐⭐⭐"
 	}
 ];
-const articleList = document.querySelector('.book');
+const booksContainer = document.querySelector('main');
+booksContainer.innerHTML = '';
 articles.forEach(article => {
-	const article = document.createElement('article');
-	article.className = 'book', 'mobile-only';
-
 	let html = `
+	<article class="book" id="mobile-only">
     <section class="book-meta">
 
     <time datetime="2022-07-05" class="meta-item date">${article.date}</time>
@@ -61,8 +60,8 @@ articles.forEach(article => {
     </p>
     </div>
     </section>
+    </article>
 	`;
-	article.innerHTML = html;
-	articleList.appendChild(article);
+	booksContainer.innerHTML += html;
 });
          
