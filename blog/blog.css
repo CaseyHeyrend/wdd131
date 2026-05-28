@@ -53,7 +53,7 @@ nav a {
   border-top: 2px solid #d9a46c;/* Light Peach */
 
 }
-.post {
+.book {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -63,17 +63,17 @@ nav a {
 }
 
 /* Meta Information */
-.post-meta {
+.book-meta {
   text-align: right;
   font-size: 0.9rem;
   font-family: Arial, sans-serif;
 }
 
-.post-meta .meta-item {
+.book-meta .meta-item {
   margin: 4px 0;
 }
 /* Main Content */
-.post-content h2 {
+.book-content h2 {
   color: #A40A26;/* Dark Red */
   font-size: 1.5rem;
   font-size: 2rem;
@@ -111,14 +111,14 @@ footer {
   #mobile-only {
     border-top: none;
   }
-  .post {
+  .book {
     display: grid;
     grid-template-columns: 180px 1fr;
     gap: 40px;
     align-items: start;
   }
 
-  .post-meta {
+  .book-meta {
     border-right: 2px solid #d9a46c;
     padding-right: 20px;
     margin-bottom: 0;
