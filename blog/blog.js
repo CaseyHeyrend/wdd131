@@ -38,4 +38,29 @@ const articles = [
 		stars: "⭐⭐⭐⭐⭐"
 	}
 ];
-                
+articles.forEach(article => {
+	const articleList = document.querySelector('.post');
+	let html = `
+	<article class="post" id="mobile-only">
+    <section class="post-meta">
+
+    <time datetime="2022-07-05" class="meta-item date">${article.date}</time>
+    <p class="meta-item age">${article.ages}</p>
+    <p class="meta-item genre">${article.genre}</p>
+    <p class="meta-item rating" aria-label="${article.stars.length} out of 5 stars" role="img">${article.stars}</p>
+    </section>
+
+    <section class="post-content">
+    <h2>${article.title}</h2>
+    <div class="book-details">
+    <img src="${article.imgSrc}" alt="${article.imgAlt}" class="book-cover">
+   <p class="book-description">
+    ${article.description}
+    </p>
+    </div>
+    </section>
+    </article>
+	`;
+	articleList.innerHTML += html;
+});
+         
