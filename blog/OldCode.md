@@ -18,4 +18,7 @@
   </section>
   </article>
 
-  https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg
+  'https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg'
+  'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300'
+  'https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg'
+  

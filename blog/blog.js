@@ -18,7 +18,7 @@ const articles = [
 		description:
 			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
 		imgSrc:
-			'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
+			'images/SwordofSummer.jpeg',
 		imgAlt: 'Book cover for Magnus Chase 1',
 		ages: '12-16',
 		genre: 'Fantasy',
@@ -31,7 +31,7 @@ const articles = [
 		description:
 		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
 		imgSrc:
-		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		"images/PawnofProphecy.jpg",
 		imgAlt: "Book cover for Pawn of Prophecy",
 		ages: "12-16",
 		genre: "Fantasy",
