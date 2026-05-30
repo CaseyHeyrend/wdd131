@@ -49,7 +49,7 @@ nav a {
 }
 
 /* First Post */
-#mobile-only {
+.mobile-only {
   border-top: 2px solid #d9a46c;/* Light Peach */
 
 }
@@ -108,7 +108,7 @@ footer {
   .container {
     max-width: 1000px;
   }
-  #mobile-only {
+  .mobile-only {
     border-top: none;
   }
   .book {

@@ -42,7 +42,7 @@ const booksContainer = document.querySelector('main');
 booksContainer.innerHTML = '';
 articles.forEach(article => {
 	let html = `
-	<article class="book" id="mobile-only">
+	<article class="book mobile-only">
     <section class="book-meta">
 
     <time datetime="2022-07-05" class="meta-item date">${article.date}</time>
