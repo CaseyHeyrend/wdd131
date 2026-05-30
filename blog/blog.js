@@ -45,10 +45,20 @@ articles.forEach(article => {
 	<article class="book mobile-only">
     <section class="book-meta">
 
-    <time datetime="2022-07-05" class="meta-item date">${article.date}</time>
-    <p class="meta-item age">${article.ages}</p>
-    <p class="meta-item genre">${article.genre}</p>
-    <p class="meta-item rating" aria-label="${article.stars.length} out of 5 stars" role="img">${article.stars}</p>
+    <time datetime="2022-07-05" class="meta-item date">
+	${article.date}
+	</time>
+    <p class="meta-item age">
+	${article.ages}
+	</p>
+    <p class="meta-item genre">
+	${article.genre}
+	</p>
+    <p class="meta-item rating" 
+	aria-label="${article.stars.length} 
+	out of 5 stars" role="img">
+	${article.stars}
+	</p>
     </section>
 
     <section class="book-content">
