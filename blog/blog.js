@@ -46,55 +46,29 @@ articles.forEach(book => {
     const article = document.createElement('article');
     article.className = 'book mobile-only';
 
-    // Meta section
-    const metaSection = document.createElement('section');
-    metaSection.className = 'book-meta';
+    article.innerHTML = `
+        <section class="book-meta">
+            <time class="meta-item date">${book.date}</time>
+            <p class="meta-item age">${book.ages}</p>
+            <p class="meta-item genre">${book.genre}</p>
+            <p class="meta-item rating"
+               aria-label="${book.stars.length} out of 5 stars"
+               role="img">
+               ${book.stars}
+            </p>
+        </section>
 
-    const date = document.createElement('time');
-    date.className = 'meta-item date';
-    date.textContent = book.date;
-
-    const age = document.createElement('p');
-    age.className = 'meta-item age';
-    age.textContent = book.ages;
-
-    const genre = document.createElement('p');
-    genre.className = 'meta-item genre';
-    genre.textContent = book.genre;
-
-    const rating = document.createElement('p');
-    rating.className = 'meta-item rating';
-    rating.setAttribute(
-        'aria-label',
-        `${book.stars.length} out of 5 stars`
-    );
-    rating.setAttribute('role', 'img');
-    rating.textContent = book.stars;
-
-    metaSection.append(date, age, genre, rating);
-
-    // Content section
-    const contentSection = document.createElement('section');
-    contentSection.className = 'book-content';
-
-    const title = document.createElement('h2');
-    title.textContent = book.title;
-
-    const details = document.createElement('div');
-    details.className = 'book-details';
-
-    const img = document.createElement('img');
-    img.src = book.imgSrc;
-    img.alt = book.imgAlt;
-    img.className = 'book-cover';
-
-    const description = document.createElement('p');
-    description.className = 'book-description';
-    description.textContent = book.description;
-
-    details.append(img, description);
-    contentSection.append(title, details);
-
-    article.append(metaSection, contentSection);
+        <section class="book-content">
+            <h2>${book.title}</h2>
+            <div class="book-details">
+                <img src="${book.imgSrc}"
+                     alt="${book.imgAlt}"
+                     class="book-cover">
+                <p class="book-description">
+                    ${book.description}
+                </p>
+            </div>
+        </section>
+    `;
     booksContainer.appendChild(article);
 });
