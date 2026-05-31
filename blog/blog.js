@@ -1,3 +1,4 @@
+
 const articles = [
 	{
 		id: 1,
@@ -5,7 +6,7 @@ const articles = [
 		date: 'July 5, 2022',
 		description:
 			'If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.',
-		imgSrc: 'images/Magkycover2.jpg',
+		imgSrc: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg',
 		imgAlt: 'Book cover for Septimus Heap 1',
 		ages: '10-14',
 		genre: 'Fantasy',
@@ -18,7 +19,7 @@ const articles = [
 		description:
 			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
 		imgSrc:
-			'images/SwordofSummer.jpeg',
+			'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
 		imgAlt: 'Book cover for Magnus Chase 1',
 		ages: '12-16',
 		genre: 'Fantasy',
@@ -31,47 +32,69 @@ const articles = [
 		description:
 		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
 		imgSrc:
-		"images/PawnofProphecy.jpg",
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
 		imgAlt: "Book cover for Pawn of Prophecy",
 		ages: "12-16",
 		genre: "Fantasy",
 		stars: "⭐⭐⭐⭐⭐"
 	}
 ];
+
 const booksContainer = document.querySelector('main');
-booksContainer.innerHTML = '';
-articles.forEach(article => {
-	let html = `
-	<article class="book mobile-only">
-    <section class="book-meta">
 
-    <time datetime="2022-07-05" class="meta-item date">
-	${article.date}
-	</time>
-    <p class="meta-item age">
-	${article.ages}
-	</p>
-    <p class="meta-item genre">
-	${article.genre}
-	</p>
-    <p class="meta-item rating" 
-	aria-label="${article.stars.length} 
-	out of 5 stars" role="img">
-	${article.stars}
-	</p>
-    </section>
+articles.forEach(book => {
+    const article = document.createElement('article');
+    article.className = 'book mobile-only';
 
-    <section class="book-content">
-    <h2>${article.title}</h2>
-    <div class="book-details">
-    <img src="${article.imgSrc}" alt="${article.imgAlt}" class="book-cover">
-   <p class="book-description">
-    ${article.description}
-    </p>
-    </div>
-    </section>
-    </article>
-	`;
-	booksContainer.innerHTML += html;
+    // Meta section
+    const metaSection = document.createElement('section');
+    metaSection.className = 'book-meta';
+
+    const date = document.createElement('time');
+    date.className = 'meta-item date';
+    date.textContent = book.date;
+
+    const age = document.createElement('p');
+    age.className = 'meta-item age';
+    age.textContent = book.ages;
+
+    const genre = document.createElement('p');
+    genre.className = 'meta-item genre';
+    genre.textContent = book.genre;
+
+    const rating = document.createElement('p');
+    rating.className = 'meta-item rating';
+    rating.setAttribute(
+        'aria-label',
+        `${book.stars.length} out of 5 stars`
+    );
+    rating.setAttribute('role', 'img');
+    rating.textContent = book.stars;
+
+    metaSection.append(date, age, genre, rating);
+
+    // Content section
+    const contentSection = document.createElement('section');
+    contentSection.className = 'book-content';
+
+    const title = document.createElement('h2');
+    title.textContent = book.title;
+
+    const details = document.createElement('div');
+    details.className = 'book-details';
+
+    const img = document.createElement('img');
+    img.src = book.imgSrc;
+    img.alt = book.imgAlt;
+    img.className = 'book-cover';
+
+    const description = document.createElement('p');
+    description.className = 'book-description';
+    description.textContent = book.description;
+
+    details.append(img, description);
+    contentSection.append(title, details);
+
+    article.append(metaSection, contentSection);
+    booksContainer.appendChild(article);
 });
-         
