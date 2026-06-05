@@ -8,9 +8,15 @@ const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
 function updateNotesField() {
   const value = travelRange.value;
-
   // Show the travel notes on the form if they are choosing many campuses and require it
-  
+  if (value === "many") {
+    notesContainer.hidden = false;
+    notes.required = true;
+  } else {
+    notesContainer.hidden = true;
+    notes.required = false;
+    notes.value = "";
+  }
 }
 
 travelRange.addEventListener("change", updateNotesField);
@@ -45,13 +51,23 @@ form.addEventListener("submit", function (event) {
 
   // Validate the input
   // Let the user know to select at least one campus
+  if (selectedCampuses.length === 0) {
+    output.textContent = "Please select at least one campus.";
+    return;
+  }
 
-  
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
+  if (type === "many" && note === "") {
+    output.textContent = "Please enter travel notes.";
+    return;
+  }
 
-  
   //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-  
+  if (type === "many" && selectedCampuses.length < 2) {
+    output.textContent = "Please select at least two campuses.";
+    return;
+  }
+
 
   if (isPastDate(availableDate)) {
     output.textContent = "Please choose a later date.";
