@@ -11,7 +11,13 @@ function updateNotesField() {
 
 
   // Show the travel notes on the form if they are choosing many campuses and require it
-  
+  if (value === "many") {
+    notesContainer.hidden = false;
+    notes.required = true;
+  } else {
+    notesContainer.hidden = true;
+    notes.required = false;
+  }
 }
 
 travelRange.addEventListener("change", updateNotesField);
