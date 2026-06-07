@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Index page for the Cool Pics section of the WDD 131 course.">
+    <meta name="description" content="The Event Ticket form for the WDD 131 course.">
     <meta name="author" content="Casey Heyrend">
   <title>Event Ticket</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -31,16 +31,14 @@
         </div>
 
         <div class="field">
-        <label for="travelRange">Type</label>
+        <label for="individualType">Type</label>
           <select
-          id="travelRange"
-          name="travelRange"
-          aria-controls="notesContainer"
-          required
-          >
+          id="individualType"
+          name="individualType"
+          aria-controls="codeContainer" required>
         <option value="">Choose one</option>
-        <option value="one">Student</option>
-        <option value="many">Guest</option>
+        <option value="student">Student</option>
+        <option value="guest">Guest</option>
         </select>
       </div>
 
@@ -48,19 +46,15 @@
       <label for="availableDate">Event Date</label>
         <input id="availableDate" name="availableDate" type="date" required />
       </div>
-      <div id="studentContainer" class="field full" hidden>
-      <label for="studentId">Student ID</label>
-        <input id="studentId" name="studentId" type="text" />
-      </div>
-      <div id="accessContainer" class="field full" hidden>
-      <label for="access">Access Code</label>
-        <input id="access" name="access" type="text" />
+      <div id="codeContainer" class="field full" hidden>
+      <label id="codeLabel" for="code"></label>
+        <input id="code" name="code" type="text">
       </div>
 
     <button class="full" type="submit">Submit Preferences</button>
     </form>
 
   <section id="output" aria-live="polite"></section>
-    </main>
+  </main>
 </body>
 </html>

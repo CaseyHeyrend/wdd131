@@ -1,90 +1,77 @@
-
 const form = document.querySelector("#ticketForm");
-const travelRange = document.querySelector("#travelRange");
-const notesContainer = document.querySelector("#notesContainer");
-const notes = document.querySelector("#notes");
+const individualType = document.querySelector("#individualType");
+const codeContainer = document.querySelector("#codeContainer");
+const codeLabel = document.querySelector("#codeLabel");
+const code = document.querySelector("#code");
 const output = document.querySelector("#output");
-const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
-function updateNotesField() {
-  const value = travelRange.value;
-  if (value === "many") {
-    notesContainer.hidden = false;
-    notes.required = true;
-  } else {
-    notesContainer.hidden = true;
-    notes.required = false;
-    notes.value = "";
+function updateCodeField() {
+  if (individualType.value === "student") {
+    codeContainer.hidden = false;
+    codeLabel.textContent = "Student Id";
+    code.required = true;
+  }
+  else if (individualType.value === "guest") {
+    codeContainer.hidden = false;
+    codeLabel.textContent = "Access Code";
+    code.required = true;
+  }
+  else {
+    codeContainer.hidden = true;
+    code.required = false;
+    code.value = "";
   }
 }
 
-travelRange.addEventListener("change", updateNotesField);
-updateNotesField();
+individualType.addEventListener("change", updateCodeField);
+updateCodeField();
 
-
-
-function isPastDate(value) {
+function isPastDate(dateString) {
   const today = new Date();
-  today.setHours(0, 0, 0, 0); 
+  today.setHours(0, 0, 0, 0);
 
-  const chosen = new Date(value);
+  const selected = new Date(dateString);
 
-  return chosen < today;
-
+  return selected <= today;
 }
 
-function getSelectedCampuses() {
-  return Array.from(campusBoxes)
-    .filter(box => box.checked)
-    .map(box => box.value); 
-}
-
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   output.textContent = "";
 
-  const firstName = form.firstName.value.trim();
-  const lastName = form.lastName.value.trim();
-  const email = form.email.value.trim();
-  const type = form.travelRange.value;
-  const availableDate = form.availableDate.value;
-  const selectedCampuses = getSelectedCampuses();
-  const note = form.notes.value.trim();
+  const type = individualType.value;
+  const date = form.availableDate.value;
+  const enteredCode = code.value.trim();
 
-
-  if (selectedCampuses.length === 0) {
-    output.textContent = "Please select at least one campus.";
-    return;
-  }
-
-  
-  if (type === "many" && note === "") {
-    output.textContent = "Please enter travel notes.";
-    return;
-  }
-
- 
-  if (type === "many" && selectedCampuses.length < 2) {
-    output.textContent = "Please select at least two campuses.";
-    return;
-  }
-
-
-  if (isPastDate(availableDate)) {
+  if (isPastDate(date)) {
     output.textContent = "Please choose a later date.";
     return;
   }
 
+  if (type === "student") {
+    if (!/^\d{9}$/.test(enteredCode)) {
+      output.textContent =
+        "Student Id must contain exactly 9 digits.";
+      return;
+    }
+  }
+
+  if (type === "guest") {
+    if (enteredCode !== "EVENT131") {
+      output.textContent =
+        "Access Code must be EVENT131.";
+      return;
+    }
+  }
+
   output.innerHTML = `
-  <h2>Preference Submitted</h2>
-  <p>${firstName} ${lastName}</p>
-  <p>Email: ${email}</p>
-  <p>Availability: ${availableDate}</p>
-  <p>Campuses: ${selectedCampuses.join(", ")}</p>
-  <p>Preference Level: ${type}</p>
+    <h2>Ticket Reserved</h2>
+    <p>Name: ${form.firstName.value} ${form.lastName.value}</p>
+    <p>Email: ${form.email.value}</p>
+    <p>Date: ${date}</p>
+    <p>Type: ${type === "one" ? "Student" : "Guest"}</p>
   `;
 
   form.reset();
-  updateNotesField();
+  updateCodeField();
 });
-          
