@@ -6,21 +6,26 @@ const code = document.querySelector("#code");
 const output = document.querySelector("#output");
 
 function updateCodeField() {
-  if (individualType.value === "student") {
+  if (individualType.value === "one" || individualType.value === "two") {
     codeContainer.hidden = false;
-    codeLabel.textContent = "Student Id";
-    code.required = true;
   }
-  else if (individualType.value === "guest") {
-    codeContainer.hidden = false;
-    codeLabel.textContent = "Access Code";
-    code.required = true;
-  }
-  else {
+  else  {
     codeContainer.hidden = true;
-    code.required = false;
     code.value = "";
+    code.required = false;
   }
+  if (individualType.value === "one") {
+    codeLabel.textContent = "Student I#";
+    code.placeholder = "Enter your 9-digit Student I#";
+    code.required = true;
+    code.pattern = "\\d{9}";
+  } else if (individualType.value === "two") {
+    codeLabel.textContent = "Access Code";
+    code.placeholder = "Enter the Access Code";
+    code.required = true;
+    code.pattern = "EVENT131";
+  }
+     
 }
 
 individualType.addEventListener("change", updateCodeField);
@@ -48,15 +53,15 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  if (type === "student") {
+  if (type === "one") {
     if (!/^\d{9}$/.test(enteredCode)) {
       output.textContent =
-        "Student Id must contain exactly 9 digits.";
+        "Student I# must contain exactly 9 digits.";
       return;
     }
   }
 
-  if (type === "guest") {
+  if (type === "two") {
     if (enteredCode !== "EVENT131") {
       output.textContent =
         "Access Code must be EVENT131.";
