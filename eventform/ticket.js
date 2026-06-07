@@ -65,11 +65,10 @@ form.addEventListener("submit", (event) => {
   }
 
   output.innerHTML = `
-    <h2>Ticket Reserved</h2>
-    <p>Name: ${form.firstName.value} ${form.lastName.value}</p>
-    <p>Email: ${form.email.value}</p>
-    <p>Date: ${date}</p>
-    <p>Type: ${type === "one" ? "Student" : "Guest"}</p>
+    <h2>Ticket Created</h2>
+    <p>${form.firstName.value} ${form.lastName.value}</p>
+    <p>${type === "one" ? "Student" : "Guest"}</p>
+    <p>${date}</p>
   `;
 
   form.reset();
