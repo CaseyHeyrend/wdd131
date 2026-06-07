@@ -6,24 +6,19 @@ const code = document.querySelector("#code");
 const output = document.querySelector("#output");
 
 function updateCodeField() {
-  if (individualType.value === "one" || individualType.value === "two") {
+  if (individualType.value === "one") {
     codeContainer.hidden = false;
-  }
-  else  {
+    codeLabel.textContent = "Student I#";
+    code.placeholder = "Enter 9-digit Student I#";
+  } else if (individualType.value === "two") {
+    codeContainer.hidden = false;
+    codeLabel.textContent = "Access Code";
+    code.placeholder = "Enter Access Code";
+  } else {
     codeContainer.hidden = true;
     code.value = "";
     code.required = false;
-  }
-  if (individualType.value === "one") {
-    codeLabel.textContent = "Student I#";
-    code.placeholder = "Enter your 9-digit Student I#";
-    code.required = true;
-    code.pattern = "\\d{9}";
-  } else if (individualType.value === "two") {
-    codeLabel.textContent = "Access Code";
-    code.placeholder = "Enter the Access Code";
-    code.required = true;
-    code.pattern = "EVENT131";
+    codeLabel.textContent = "";
   }
      
 }
