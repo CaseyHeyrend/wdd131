@@ -18,6 +18,19 @@ const aCourse = {
       }
   };
 
+console.log(aCourse.code);
+console.log(aCourse.name);
+
+document.querySelector('#courseName').textContent = aCourse.name;
+document.querySelector('#courseCode').textContent = aCourse.code;
+
+document.querySelector('img').setAttribute('src', aCourse.logo);
+document.querySelector('img').setAttribute('alt', aCourse.name);
+document.querySelector('img').style.width = '100px';
+
+console.log(aCourse.sections[1].roomNum);//instructor
+//aCourse.enrollStudent();
+
 function sectionTemplate(section) {
     return `<tr>
       <td>${section.sectionNum}</td>
@@ -38,19 +51,3 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.enrollStudent(sectionNum);
 });
-          
-
-      console.log(aCourse.code);
-      console.log(aCourse.name);
-
-      document.querySelector('#courseName').textContent = aCourse.name;
-      document.querySelector('#courseCode').textContent = aCourse.code;
-
-      document.querySelector('img').setAttribute('src', aCourse.logo);
-      document.querySelector('img').setAttribute('alt', aCourse.name);
-      document.querySelector('img').style.width = '100px';
-
-      console.log(aCourse.sections[1].roomNum);//instructor
-
-      aCourse.enrollStudent();
-
