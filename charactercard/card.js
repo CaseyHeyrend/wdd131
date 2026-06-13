@@ -1,9 +1,10 @@
 const character = {
-    name: "Wolf Warrior",
+    name: "Shadowswift",
     class: "Warrior",
     level: 1,
     health: 100,
-    image: "images/wolf-warrior.jpg",
+    image: "images/Shadowswift.jpg",
+    alt: "A wolf warrior",
 
     attacked() {
         this.health -= 20;
@@ -28,6 +29,7 @@ function updateCard() {
     document.getElementById("level").textContent = character.level;
     document.getElementById("health").textContent = character.health;
     document.getElementById("character-image").src = character.image;
+    document.getElementById("character-image").alt = character.alt;
 }
 
 document.getElementById("attack-but").addEventListener("click", () => {
