@@ -57,5 +57,13 @@
 
   button:hover {
     background-color: #5a5c57;
-  }            
+  }
+
+  #message {
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}           
                     
