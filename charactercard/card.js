@@ -23,11 +23,11 @@ const character = {
 };
 
 function updateCard() {
-    document.querySelector("name").textContent = character.name;
-    document.querySelector("class").textContent = character.class;
-    document.querySelector("level").textContent = character.level;
-    document.querySelector("health").textContent = character.health;
-    document.querySelector("image").src = character.image;
+    document.getElementById("name").textContent = character.name;
+    document.getElementById("class").textContent = character.class;
+    document.getElementById("level").textContent = character.level;
+    document.getElementById("health").textContent = character.health;
+    document.getElementById("character-image").src = character.image;
 }
 
 document.getElementById("attack-but").addEventListener("click", () => {
