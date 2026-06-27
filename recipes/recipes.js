@@ -290,24 +290,23 @@ function getRandomRecipe() {
     return recipes[random(recipes.length)];
 }
 
-function recipeTemplate(recipe) {
-    let tags = "";
-
-    recipe.tags.forEach(function(tag) {
-        tags += `<span class="tag">${tag}</span> `;
-    });
-
-    function ratingTemplate(rating) {
+function ratingTemplate(rating) {
     let stars = "";
-    let fullStars = Math.round(recipe.rating);
+    let fullStars = Math.round(rating);
 
     for (let i = 1; i <= 5; i++) {
         stars += i <= fullStars ? "⭐" : "☆";
     }
 
     return stars;
-
 }
+
+function recipeTemplate(recipe) {
+    let tags = "";
+
+    recipe.tags.forEach(function(tag) {
+        tags += `<span class="tag">${tag}</span> `;
+    });
 
     return `
         <article class="recipe-card">
@@ -318,7 +317,7 @@ function recipeTemplate(recipe) {
 
                 <h2>${recipe.name}</h2>
 
-                <p class="rating" aria-label="${fullStars} out of 5 stars" 
+                <p class="rating" aria-label="${ratingTemplate.fullStars} out of 5 stars" 
 				role="img"> ${ratingTemplate(recipe.rating)}</p>
 
                 <p class="description">
@@ -347,7 +346,7 @@ function filterRecipes(query) {
             recipe.name.toLowerCase().includes(query) ||
             recipe.description.toLowerCase().includes(query) ||
             recipe.tags.some(tag => tag.toLowerCase().includes(query))
-		);
+        );
     });
 
     filteredRecipes.sort(function(a, b) {
