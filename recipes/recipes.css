@@ -110,13 +110,14 @@ main {
     display: inline-block;
     border: 1px solid #000;
     padding: .25rem .5rem;
+    background-color: #F0F0F0;
 }
 .recipe-info h2 {
     font-family: "Amatic SC", cursive;
     font-size: 2rem;
     color: #248FDD;
     margin: 0.25rem 0;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
 
