@@ -114,8 +114,9 @@ main {
 .recipe-info h2 {
     font-family: "Amatic SC", cursive;
     font-size: 2rem;
-    color: #40A6E3;
+    color: #248FDD;
     margin: 0.25rem 0;
+    font-weight: 700;
 }
 
 
