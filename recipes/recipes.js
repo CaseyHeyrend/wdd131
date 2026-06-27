@@ -313,7 +313,8 @@ function recipeTemplate(recipe) {
 
                 <h2>${recipe.name}</h2>
 
-                <p class="rating">${stars}</p>
+                <p class="rating" aria-label=${stars.length} 
+				out of 5 stars" role="img">${stars}</p>
 
                 <p class="description">
                     ${recipe.description}

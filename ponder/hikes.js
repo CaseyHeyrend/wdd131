@@ -72,5 +72,6 @@ const hikes = [
   }
 ];
 
+let hikeContainer = document.querySelector('#hike-container')
 
                 
