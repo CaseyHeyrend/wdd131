@@ -90,6 +90,11 @@ main {
     padding: 1rem;
     width: 100%;
 }
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .recipe-card {
     display: flex;
@@ -98,12 +103,12 @@ main {
     border-radius: 8px;
     padding: 1rem;
     gap: 1rem;
-
 }
 
 .recipe-card img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .tag {
@@ -149,12 +154,16 @@ footer {
 
     .recipe-card {
         flex-direction: row;
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .recipe-card img {
-        width: 300px;
+        width: 400px;
+        height: auto;
         object-fit: cover;
     }
+
     .recipe-info {
         display: flex;
         flex-direction: column;
