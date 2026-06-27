@@ -279,5 +279,66 @@ const recipes = [
 		recipeYield: '12 servings',
 		rating: 4
 	}
-]            
-                    
+] 
+           
+function random(num) {
+  return Math.floor(Math.random() * num);
+}
+
+function getRandomRecipe() {
+  return recipes[random(recipes.length)];
+}
+
+function recipeTemplate(recipe) {
+  return `
+    <article class="recipe-card">
+      <img src="${recipe.image}" alt="${recipe.name}">
+
+      <div class="recipe-info">
+        <p class="tag">${recipe.tags.join(", ")}</p>
+
+        <h2>${recipe.name}</h2>
+
+        <p class="rating">${"⭐".repeat(Math.floor(recipe.rating))}</p>
+
+        <p class="description">
+          ${recipe.description}
+        </p>
+      </div>
+    </article>
+  `;
+}
+
+function renderRecipes(recipeList) {
+  const container = document.querySelector(".recipe-container");
+
+  container.innerHTML = recipeList
+    .map(recipeTemplate)
+    .join("");
+}
+
+function filterRecipes(query) {
+  query = query.toLowerCase();
+
+  const filtered = recipes.filter(recipe =>
+    recipe.name.toLowerCase().includes(query) ||
+    recipe.description.toLowerCase().includes(query) ||
+    recipe.tags.join(" ").toLowerCase().includes(query)
+  );
+
+  filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+  renderRecipes(filtered);
+}
+
+document.querySelector(".search").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const query = document.querySelector("#search").value;
+
+  filterRecipes(query);
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  renderRecipes([getRandomRecipe()]);
+});
