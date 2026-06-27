@@ -297,12 +297,17 @@ function recipeTemplate(recipe) {
         tags += `<span class="tag">${tag}</span> `;
     });
 
+    function ratingTemplate(rating) {
     let stars = "";
     let fullStars = Math.round(recipe.rating);
 
-    for (let i = 0; i < fullStars; i++) {
-        stars += "⭐";
+    for (let i = 1; i <= 5; i++) {
+        stars += i <= fullStars ? "⭐" : "☆";
     }
+
+    return stars;
+
+}
 
     return `
         <article class="recipe-card">
@@ -313,8 +318,8 @@ function recipeTemplate(recipe) {
 
                 <h2>${recipe.name}</h2>
 
-                <p class="rating" aria-label=${stars.length} 
-				out of 5 stars" role="img">${stars}</p>
+                <p class="rating" aria-label="${fullStars} out of 5 stars" 
+				role="img"> ${ratingTemplate(recipe.rating)}</p>
 
                 <p class="description">
                     ${recipe.description}
@@ -341,8 +346,8 @@ function filterRecipes(query) {
         return (
             recipe.name.toLowerCase().includes(query) ||
             recipe.description.toLowerCase().includes(query) ||
-            recipe.tags.join(" ").toLowerCase().includes(query)
-        );
+            recipe.tags.some(tag => tag.toLowerCase().includes(query))
+		);
     });
 
     filteredRecipes.sort(function(a, b) {

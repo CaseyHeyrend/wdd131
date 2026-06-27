@@ -72,6 +72,11 @@ body {
     height: 20px;
 }
 
+.sr-only {
+    position: absolute;
+    left: -10000px;
+}
+
 
 /* Main */
 hr {
