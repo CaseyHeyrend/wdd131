@@ -143,7 +143,7 @@ nav a:hover {
     ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 page2 page2 . .";
+    "page2 page2 page2 page2 page2 page2";
 }
 .sitemap > div {
   text-align: center;
@@ -158,7 +158,6 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-
 
 .top {
   grid-area: top;
