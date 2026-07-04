@@ -1,18 +1,19 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #2E6F40; /* Forest Green */
-  --secondary-color: #3D8B5A;/* Pine Green */
+  --secondary-color:#8FBC8F;/*  */
   --accent1-color: #5FA8D3;/* Sky Blue */
   --accent2-color: #F8F6F0;/* Warm Off White */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Bree Serif";
+  --paragraph-font: "Open Sans", Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
@@ -125,7 +126,7 @@ nav a {
 }
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color:b;/*var()--nav-link-color*/
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
@@ -142,7 +143,7 @@ nav a:hover {
     ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "page2 page2 page2 page2 . .";
 }
 .sitemap > div {
   text-align: center;
@@ -157,11 +158,7 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
+
 
 .top {
   grid-area: top;
