@@ -2,7 +2,7 @@ const trip = [
     {
         name: "Yellowstone National Park",
         stub: "yellowstone",
-        imgSrc: "#",
+        imgSrc: "images/yellowstone.jpg", // Photo by James Lee,
         imgAlt: "Image of Yellowstone National Park",
         description: "Yellowstone National Park is a vast wilderness area in the U.S. states of Wyoming, Montana, and Idaho. It is known for its wildlife and geothermal features, especially Old Faithful geyser.",
         availability: "Open year-round, but some areas may be inaccessible during winter months.",
@@ -12,17 +12,17 @@ const trip = [
     {
         name: "Teton Valley",
         stub: "teton-valley",
-        imgSrc: "#",
+        imgSrc: "images/tetons.jpg", // Photo by Wal Saravia,
         imgAlt: "Image of Teton Valley",
         description: "Teton Valley is a picturesque region in western Wyoming, known for its stunning mountain views, outdoor recreation opportunities, and charming small towns.",
         availability: "Open year-round, with peak tourist season in summer.",
         campers: 2,
-        type: ["Tent camping", "RV camping", "Cabin rentals", "backcountry camping"]
+        type: ["Tent", "RV camping", "Cabin rentals", "backcountry camping"]
     },
     {
         name: "Uinta Mountains",
         stub: "uinta-mountains",
-        imgSrc: "#",
+        imgSrc: "/images/elizabeth_ridge-CaseyHeyrend.jpg", // Photo by Casey Heyrend,
         imgAlt: "Image of Uinta Mountains",
         description: "The Uinta Mountains are a range of mountains in northeastern Utah, known for their alpine lakes, hiking trails, and diverse wildlife.",
         availability: "Open year-round, with peak tourist season in summer.",

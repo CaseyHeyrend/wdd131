@@ -1,137 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Add a camping trip to your planner.">
-<meta name="author" content="Casey Heyrend">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Add a camping trip to your planner.">
+        <meta name="author" content="Casey Heyrend">
 
-<title>Add Trip</title>
-<link rel="icon" href="images/favicon.ico">
+    <title>Add Trip</title>
+        <link rel="icon" href="images/favicon.ico">
 
-<link rel="stylesheet"href="styles.css">
-<script src="index.js"defer></script>
-<script src="form.js" defer></script>
+        <link rel="stylesheet"href="styles.css">
+    <script src="index.js"defer></script>
+    <script src="form.js" defer></script>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-<header>
+        <header>
 
-<img src="images/camplogo.png"
-     alt="Camping Trip Planner logo">
+            <img src="images/camplogo.png"
+            alt="Camping Trip Planner logo">
 
-<h1>Camping Trip Planner</h1>
+        <h1>Camping Trip Planner</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="addtrip.html" class="active">Add Trip</a>
-        <a href="site-plan.html">Site Plan</a>
-    </nav>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="addtrip.html" class="active">Add Trip</a>
+            <a href="site-plan.html">Site Plan</a>
+            </nav>
 
-    <button id="darkMode" aria-label="Toggle Dark Mode">
-        🌙
-    </button>
-</header>
+            <button id="darkMode" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
+        </header>
 
-<main>
+        <main>
 
-<section class="hero-small">
-    <h2>Add a New Camping Trip</h2>
-    <p>Fill out the form below to plan your next adventure.</p>
-</section>
+            <section class="hero-small">
+            <h2>Add a New Camping Trip</h2>
+            <p>Fill out the form below to plan your next adventure.</p>
+            </section>
 
-<section class="trip-form">
+            <section class="trip-form">
 
-<form id="tripForm">
+                <form id="tripForm">
 
-<div class="form-grid">
+                    <div class="form-grid">
 
-<div>
-<label for="tripName">Trip Name</label>
-<input
-type="text"
-id="tripName"
-name="tripName"
-required>
-</div>
+                        <div>
+                        <label for="tripName">Trip Name</label>
+                            <input type="text"id="tripName" name="tripName"required>
+                        </div>
 
-<div>
-<label for="destination">Destination</label>
-<input
-type="text"
-id="destination"
-name="destination"
-required>
-</div>
+                        <div>
+                        <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination"required>
+                        </div>
 
-<div>
-<label for="startDate">Start Date</label>
-<input
-type="date"
-id="startDate"
-name="startDate"
-required>
-</div>
+                        <div>
+                        <label for="startDate">Start Date</label>
+                            <input type="date" id="startDate" name="startDate"required>
+                        </div>
 
-<div>
-<label for="endDate">End Date</label>
-<input
-type="date"
-id="endDate"
-name="endDate"
-required>
-</div>
+                        <div>
+                        <label for="endDate">End Date</label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
 
-<div>
-<label for="campers">Number of Campers</label>
-<input
-type="number"
-id="campers"
-name="campers"
-min="1"
-required>
-</div>
+                        <div>
+                        <label for="campers">Number of Campers</label>
+                            <input type="number" id="campers" name="campers" min="1" required>
+                        </div>
 
-<div>
-<label for="campType">Camping Type</label>
+                        <div>
+                        <label for="campType">Camping Type</label>
 
-<select id="campType">
-    <option value="">Choose One</option>
-    <option value="Tent">Tent</option>
-    <option value="RV">RV</option>
-    <option value="Cabin">Cabin</option>
-</select>
+                            <select id="campType">
+                            <option value="">Choose One</option>
+                            <option value="Tent">Tent</option>
+                            <option value="RV">RV</option>
+                            <option value="Cabin">Cabin</option>
+                            </select>
 
-<h3>Packing List</h3>
+                        <h3>Packing List</h3>
 
-<div id="packingList"></div>
+                        <div id="packingList"></div>
 
-<label for="notes">Notes</label>
+                        <label for="notes">Notes</label>
 
-<textarea
-id="notes"
-rows="5"
-placeholder="Additional trip notes..."></textarea>
+                        <textarea id="notes" rows="5" placeholder="Additional trip notes..."></textarea>
 
-<button type="submit" class="submit-btn">
-    Add Trip
-</button>
+                            <button type="submit" class="submit-btn">
+                                Add Trip
+                            </button>
 
-</form>
+                        </form>
 
-</section>
+                    </section>
 
-</main>
+                </main>
 
-<footer>
+                <footer>
 
-<p>
-© 2026 Camping Trip Planner | Casey Heyrend
-</p>
+                    <p>
+                        © 2026 Camping Trip Planner | Casey Heyrend
+                    </p>
 
-</footer>
+                </footer>
 
-</body>
-</html>
+            </body>
+        </html>
