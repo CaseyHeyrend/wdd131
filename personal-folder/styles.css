@@ -1,0 +1,296 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Color Variables */
+:root {
+    --primary: #2E6F40;
+    --secondary: #8FBC8F;
+    --accent: #5FA8D3;
+    --background: #F8F6F0;
+    --card: #FFFFFF;
+    --text: #2E2E2E;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --background: #1E2521;
+    --card: #2F3833;
+    --text: #F8F6F0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+header img {
+    width: 80px;
+}
+
+header h1 {
+    font-family: "Bree Serif", serif;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+#darkMode {
+    background: var(--accent);
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+
+    color: white;
+
+    background: rgba(0,0,0,.45);
+
+    padding: 1rem;
+
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-family: "Bree Serif", serif;
+}
+
+/* Search */
+
+/* Search */
+
+.search {
+    display: flex;
+    gap: 0;
+    margin: 1rem 0 0 0;
+}
+
+.search input {
+    flex: 1;
+    padding: .75rem;
+    border: 1.5px solid var(--secondary);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: none;
+    border-right: none;
+}
+
+.search button {
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid black;
+    border-left: 1.5px solid #ccc;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+}
+
+/* Trip Cards */
+
+.trip-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.trip-card {
+    background: var(--card);
+
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.trip-card h3 {
+    color: var(--primary);
+    margin-bottom: .5rem;
+}
+
+.trip-card p {
+    margin-bottom: .4rem;
+}
+
+.trip-card button {
+    margin-top: .5rem;
+
+    background: var(--primary);
+
+    color: white;
+
+    border: none;
+
+    padding: .6rem 1rem;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.trip-card button:hover {
+    background: var(--secondary);
+    color: black;
+}
+
+/* Form */
+
+form {
+    max-width: 600px;
+
+    margin: 2rem auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .8rem;
+
+    padding: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: .75rem;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: .9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: var(--secondary);
+    color: black;
+}
+
+#packingList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+#packingList label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+
+    background: var(--primary);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1rem;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .hero img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .trip-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .hero-text {
+        max-width: 500px;
+        font-size: 1.2rem;
+    }
+
+}
