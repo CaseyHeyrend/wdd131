@@ -113,7 +113,8 @@ nav a:hover {
 .search {
     display: flex;
     gap: 0;
-    margin: 1rem 0 0 0;
+    padding: 1rem;
+    
 }
 
 .search input {
@@ -127,15 +128,14 @@ nav a:hover {
 }
 
 .search button {
-    padding: .75rem;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid black;
-    border-left: 1.5px solid #ccc;
+    border: 1.5px solid var(--secondary);
+    border-left: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-
     background-color: #fff;
     cursor: pointer;
 }
@@ -148,6 +148,21 @@ nav a:hover {
 .sr-only {
     position: absolute;
     left: -10000px;
+}
+.add button {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    border: 1.5px solid var(--secondary);
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.add button img {
+    width: 20px;
+
 }
 
 /* Trip Cards */
@@ -224,6 +239,7 @@ textarea,button {
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
+
 }
 
 textarea {

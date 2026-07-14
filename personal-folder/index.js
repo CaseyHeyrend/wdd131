@@ -64,7 +64,7 @@ function displayTrips(tripList) {
 
             <p><strong>Camping Type:</strong> ${trip.type}</p>
 
-            </button>
+            <button class="deleteBtn" data-index="${index}">Delete</button>
         `;
 
         container.appendChild(card);
