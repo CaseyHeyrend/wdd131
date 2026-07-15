@@ -39,7 +39,6 @@ header {
     background: var(--primary);
     color: white;
     padding: 1rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,13 +95,9 @@ body #darkMode {
     position: absolute;
     bottom: 15%;
     left: 5%;
-
     color: white;
-
     background: rgba(0,0,0,.45);
-
     padding: 1rem;
-
     border-radius: 10px;
 }
 
@@ -155,10 +150,9 @@ body #darkMode {
 
 #addTripButton {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    flex-direction: reverse-row;
+    padding: 10px 15px;
     border: 1.5px solid var(--secondary);
-    border-left: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: #fff;
@@ -166,7 +160,7 @@ body #darkMode {
 }
 #addTripButton img {
     width: 20px;
-    height: 20px;
+    height: auto;
 }
 
 .modal{
@@ -314,13 +308,9 @@ form button:hover {
 
 footer {
     margin-top: 2rem;
-
     background: var(--primary);
-
     color: white;
-
     text-align: center;
-
     padding: 1rem;
 }
 
