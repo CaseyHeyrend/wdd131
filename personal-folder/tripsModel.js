@@ -1,4 +1,4 @@
-const trips = [
+export const trips = [
     {
         name: "Yellowstone Adventure",
         destination: "Yellowstone National Park",
