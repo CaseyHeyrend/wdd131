@@ -150,7 +150,9 @@ body #darkMode {
 
 #addTripButton {
     display: flex;
-    flex-direction: reverse-row;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: -15px;
     padding: 10px 15px;
     border: 1.5px solid var(--secondary);
     border-top-right-radius: 8px;
