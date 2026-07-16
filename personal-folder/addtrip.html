@@ -37,25 +37,46 @@
 
         <main>
 
-            <h2>Add a New Camping Trip</h2>
-            <p>Fill out the form below to plan your next adventure.</p>
-            </section>
+        <h2>Add a New Camping Trip</h2>
+        <p>Fill out the form below to plan your next adventure.</p>
+        </section>
 
-            <section class="trip-form">
+        <section class="trip-form">
 
-                <form id="tripForm">
+            <form id="tripForm">
 
-                    <div class="form-grid">
+                <div class="form-grid">
 
-                        <div>
-                        <label for="tripName">Trip Name</label>
-                            <input type="text"id="tripName" name="tripName"required>
-                        </div>
+                    <div>
+                    <label for="tripName">Trip Name</label>
+                        <input type="text"id="tripName" name="tripName"required>
+                    </div>
 
-                        <div>
-                        <label for="destination">Destination</label>
-                            <input type="text" id="destination" name="destination"required>
-                        </div>
+                    <div>
+                        <select id="destination" required>
+                        <option value="">-- Select a Destination --</option>
+
+                        <option value="yellowstone">Yellowstone National Park</option>
+                        <option value="grandTeton">Teton Valley</option>
+                        <option value="uintaMountains">Uinta Mountains</option>
+                        <option value="bearLake">Bear Lake</option>
+                        <option value="glacier">Glacier National Park</option>
+                        <option value="zion">Zion National Park</option>
+                        <option value="bryceCanyon">Bryce Canyon National Park</option>
+                        <option value="craterLake">Crater Lake National Park</option>
+                        <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
+                        <option value="arches">Arches National Park</option>
+                        <option value="redfishLake">Redfish Lake</option>
+                        <option value="yosemite">Yosemite National Park</option>
+                        <option value="islandPark">Island Park</option>
+                        <option value="palisades">Palisades Reservoir</option>
+                        <option value="mesaFalls">Mesa Falls Scenic Area</option>
+                        <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
+                        <option value="henrysLake">Henrys Lake State Park</option>
+                        <option value="cityOfRocks">City of Rocks National Reserve</option>
+                        <option value="jennyLake">Jenny Lake</option>
+                        <option value="lavaHotSprings">Lava Hot Springs</option>
+                        </select>
 
                         <div>
                         <label for="startDate">Start Date</label>

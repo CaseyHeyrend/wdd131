@@ -54,50 +54,73 @@
                 <button id="addTripButton">
                     <img src="images/plus.svg" alt="Add Trip">
                 </button>
-            
 
 
 
-            <section class="trip-container">
 
-            </section>
+                <section class="trip-container">
+
+                </section>
 
 
-            <div id="tripModal" class="modal">
+                <div id="tripModal" class="modal">
 
-                <div class="modal-content">
+                    <div class="modal-content">
 
-                <span id="closeModal">&times;</span>
+                    <span id="closeModal">&times;</span>
 
-                <h2>Add Trip</h2>
+                    <h2>Add Trip</h2>
 
-                    <form id="tripForm">
+                        <form id="tripForm">
 
-                    <label>Trip Name</label>
-                        <input id="tripName" required>
+                        <label>Trip Name</label>
+                            <input id="tripName" required>
 
-                    <label>Destination</label>
-                        <input id="destination" required>
+                            <select id="destination" required>
+                            <option value="">-- Select a Destination --</option>
 
-                    <label>Start Date</label>
-                        <input type="date" id="startDate">
+                            <option value="yellowstone">Yellowstone National Park</option>
+                            <option value="grandTeton">Teton Valley</option>
+                            <option value="uintaMountains">Uinta Mountains</option>
+                            <option value="bearLake">Bear Lake</option>
+                            <option value="glacier">Glacier National Park</option>
+                            <option value="zion">Zion National Park</option>
+                            <option value="bryceCanyon">Bryce Canyon National Park</option>
+                            <option value="craterLake">Crater Lake National Park</option>
+                            <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
+                            <option value="arches">Arches National Park</option>
+                            <option value="redfishLake">Redfish Lake</option>
+                            <option value="yosemite">Yosemite National Park</option>
+                            <option value="islandPark">Island Park</option>
+                            <option value="palisades">Palisades Reservoir</option>
+                            <option value="mesaFalls">Mesa Falls Scenic Area</option>
+                            <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
+                            <option value="henrysLake">Henrys Lake State Park</option>
+                            <option value="cityOfRocks">City of Rocks National Reserve</option>
+                            <option value="jennyLake">Jenny Lake</option>
+                            <option value="lavaHotSprings">Lava Hot Springs</option>
+                            </select>
 
-                    <label>Campers</label>
-                        <input type="number" id="campers">
+                        <label>Start Date</label>
+                            <input type="date" id="startDate">
 
-                    <label>Camping Type</label>
+                        <label>Campers</label>
+                            <input type="number" id="campers">
 
-                        <select id="campType">
-                        <option>Tent</option>
-                        <option>RV</option>
-                        <option>Cabin</option>
-                        </select>
+                        <label>Camping Type</label>
 
-                        <button type="submit">
-                            Add Trip
-                        </button>
+                            <select id="campType">
+                            <option>Tent</option>
+                            <option>RV</option>
+                            <option>Cabin</option>
+                            </select>
 
-                    </form>
+                            <button type="submit">
+                                Add Trip
+                            </button>
+
+                        </form>
+                    </div>
                 </div>
             </main>
 

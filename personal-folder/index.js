@@ -1,4 +1,28 @@
-import { trips } from "./tripsModel.js";
+import { locations } from "./tripsModel.js";
+const trips = [];
+trips.push(
+    {
+        name: "Summer Adventure",
+        ...locations.yellowstone,
+        startDate: "2026-08-11",
+        campers: 3,
+        type: "Tent"
+    },
+    {
+        name: "Family Weekend",
+        ...locations.bearLake,
+        startDate: "2026-07-01",
+        campers: 4,
+        type: "RV"
+    },
+    {
+        name: "Mountain Escape",
+        ...locations.uintaMountains,
+        startDate: "2026-07-18",
+        campers: 5,
+        type: "Cabin"
+    }
+);
 
 // Display trips
 function displayTrips(tripList) {
@@ -28,9 +52,7 @@ function displayTrips(tripList) {
 
             <p><strong>Campers:</strong> ${trip.campers}</p>
 
-            <p><strong>Camping Type:</strong> ${
-                    Array.isArray(trip.type) ? trip.type.join(", ") : trip.type
-            }</p>
+            <p><strong>Camping Type:</strong> ${trip.type}</p>
 
         <button class="deleteBtn" data-index="${index}">Delete</button>
             `;
@@ -137,18 +159,21 @@ function addTrip() {
 
                 event.preventDefault();
 
-                const trip = {
+                const locationKey = document.querySelector("#destination").value;
+                const location = locations[locationKey];
 
+                const trip = {
                     name: document.querySelector("#tripName").value,
 
-                    destination: document.querySelector("#destination").value,
+                    destination: location.destination,
+                    imgSrc: location.imgSrc,
+                    imgAlt: location.imgAlt,
+                    description: location.description,
+                    availability: location.availability,
 
                     startDate: document.querySelector("#startDate").value,
-
                     campers: document.querySelector("#campers").value,
-
                     type: document.querySelector("#campType").value
-
                 };
 
                 trips.push(trip);
