@@ -11,7 +11,7 @@
 
         <link rel="stylesheet"href="styles.css">
     <script src="index.js"defer></script>
-    <script type="module" src="formModel.js" defer></script>
+    <script src="form.js" defer></script>
 
     </head>
 
@@ -39,95 +39,97 @@
 
         <h2>Add a New Camping Trip</h2>
         <p>Fill out the form below to plan your next adventure.</p>
-        </section>
 
-        <section class="trip-form">
+            <section class="trip-form">
 
-            <form id="tripForm">
+                <form id="tripForm">
 
-                <div class="form-grid">
-
-                    <div>
-                    <label for="tripName">Trip Name</label>
-                        <input type="text"id="tripName" name="tripName"required>
-                    </div>
-
-                    <div>
-                        <select id="destination" required>
-                        <option value="">-- Select a Destination --</option>
-
-                        <option value="yellowstone">Yellowstone National Park</option>
-                        <option value="grandTeton">Teton Valley</option>
-                        <option value="uintaMountains">Uinta Mountains</option>
-                        <option value="bearLake">Bear Lake</option>
-                        <option value="glacier">Glacier National Park</option>
-                        <option value="zion">Zion National Park</option>
-                        <option value="bryceCanyon">Bryce Canyon National Park</option>
-                        <option value="craterLake">Crater Lake National Park</option>
-                        <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
-                        <option value="arches">Arches National Park</option>
-                        <option value="redfishLake">Redfish Lake</option>
-                        <option value="yosemite">Yosemite National Park</option>
-                        <option value="islandPark">Island Park</option>
-                        <option value="palisades">Palisades Reservoir</option>
-                        <option value="mesaFalls">Mesa Falls Scenic Area</option>
-                        <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
-                        <option value="henrysLake">Henrys Lake State Park</option>
-                        <option value="cityOfRocks">City of Rocks National Reserve</option>
-                        <option value="jennyLake">Jenny Lake</option>
-                        <option value="lavaHotSprings">Lava Hot Springs</option>
-                        </select>
+                    <div class="form-grid">
 
                         <div>
-                        <label for="startDate">Start Date</label>
-                            <input type="date" id="startDate" name="startDate"required>
+                        <label for="tripName">Trip Name</label>
+                            <input type="text"id="tripName" name="tripName"required>
                         </div>
 
                         <div>
-                        <label for="endDate">End Date</label>
-                            <input type="date" id="endDate" name="endDate" required>
-                        </div>
+                        <label for="destination">Destination</label>
+                            <select id="destination" required>
+                            <option value="">-- Select a Destination --</option>
 
-                        <div>
-                        <label for="campers">Number of Campers</label>
-                            <input type="number" id="campers" name="campers" min="1" required>
-                        </div>
-
-                        <div>
-                        <label for="campType">Camping Type</label>
-
-                            <select id="campType">
-                            <option value="">Choose One</option>
-                            <option value="Tent">Tent</option>
-                            <option value="RV">RV</option>
-                            <option value="Cabin">Cabin</option>
+                            <option value="yellowstone">Yellowstone National Park</option>
+                            <option value="grandTeton">Teton Valley</option>
+                            <option value="uintaMountains">Uinta Mountains</option>
+                            <option value="bearLake">Bear Lake</option>
+                            <option value="glacier">Glacier National Park</option>
+                            <option value="zion">Zion National Park</option>
+                            <option value="bryceCanyon">Bryce Canyon National Park</option>
+                            <option value="craterLake">Crater Lake National Park</option>
+                            <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
+                            <option value="arches">Arches National Park</option>
+                            <option value="redfishLake">Redfish Lake</option>
+                            <option value="yosemite">Yosemite National Park</option>
+                            <option value="islandPark">Island Park</option>
+                            <option value="palisades">Palisades Reservoir</option>
+                            <option value="mesaFalls">Mesa Falls Scenic Area</option>
+                            <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
+                            <option value="henrysLake">Henrys Lake State Park</option>
+                            <option value="cityOfRocks">City of Rocks National Reserve</option>
+                            <option value="jennyLake">Jenny Lake</option>
+                            <option value="lavaHotSprings">Lava Hot Springs</option>
                             </select>
 
-                        <h3>Packing List</h3>
+                            <div>
+                            <label for="startDate">Start Date</label>
+                                <input type="date" id="startDate" name="startDate"required>
+                            </div>
 
-                        <div id="packingList"></div>
+                            <div>
+                            <label for="endDate">End Date</label>
+                                <input type="date" id="endDate" name="endDate" required>
+                            </div>
 
-                        <label for="notes">Notes</label>
+                            <div>
+                            <label for="campers">Number of Campers</label>
+                                <input type="number" id="campers" name="campers" min="1" required>
+                            </div>
 
-                        <textarea id="notes" rows="5" placeholder="Additional trip notes..."></textarea>
+                            <div>
+                            <label for="campType">Camping Type</label>
 
-                            <button type="submit" class="submit-btn">
-                                Add Trip
-                            </button>
+                                <select id="campType">
+                                <option value="">Choose One</option>
+                                <option value="Tent">Tent</option>
+                                <option value="RV">RV</option>
+                                <option value="Cabin">Cabin</option>
+                                </select>
 
-                        </form>
+                            <h3>Packing List</h3>
 
-                    </section>
+                            <div id="packingList"></div>
 
-                </main>
+                            <label for="notes">Notes</label>
 
-                <footer>
+                            <textarea id="notes" rows="5" placeholder="Additional trip notes..."></textarea>
 
-                    <p>
-                        © 2026 Camping Trip Planner | Casey Heyrend
-                    </p>
+                                <button type="submit" class="submit-btn">
+                                    Add Trip
+                                </button>
 
-                </footer>
+                            </form>
+                        </div>
+                    </div>
 
-            </body>
-        </html>
+                </section>
+
+            </main>
+
+            <footer>
+
+                <p>
+                    © 2026 Camping Trip Planner | Casey Heyrend
+                </p>
+
+            </footer>
+
+        </body>
+    </html>
