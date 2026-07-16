@@ -42,5 +42,181 @@ export const trips = [
         startDate: "2026-07-01",
         campers: 4,
         type: ["Tent", "RV", "Cabin"]
-    }
+    },
+    {
+    name: "Glacier National Park Escape",
+    destination: "Glacier National Park",
+    imgSrc: "images/glacier.jpg",
+    imgAlt: "Image of Glacier National Park",
+    description: "Glacier National Park in Montana is known for its rugged mountains, crystal-clear lakes, scenic drives, and abundant wildlife. Visitors enjoy hiking, camping, and photography.",
+    availability: "Late spring through early fall is the most accessible season.",
+    startDate: "2026-07-15",
+    campers: 5,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Zion Canyon Adventure",
+    destination: "Zion National Park",
+    imgSrc: "images/zion.jpg",
+    imgAlt: "Image of Zion National Park",
+    description: "Zion National Park features towering sandstone cliffs, narrow slot canyons, and scenic hiking trails like Angels Landing and The Narrows.",
+    availability: "Open year-round, with spring and fall offering the most comfortable temperatures.",
+    startDate: "2026-10-05",
+    campers: 4,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Bryce Canyon Weekend",
+    destination: "Bryce Canyon National Park",
+    imgSrc: "images/bryce.jpg",
+    imgAlt: "Image of Bryce Canyon National Park",
+    description: "Bryce Canyon is famous for its colorful hoodoos, dark night skies, and breathtaking viewpoints. It's a favorite destination for hiking and stargazing.",
+    availability: "Open year-round, though snow is possible during winter.",
+    startDate: "2026-09-18",
+    campers: 2,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Crater Lake Adventure",
+    destination: "Crater Lake National Park",
+    imgSrc: "images/craterlake.jpg",
+    imgAlt: "Image of Crater Lake National Park",
+    description: "Crater Lake is the deepest lake in the United States and is famous for its incredibly blue water and scenic rim drive.",
+    availability: "Summer offers the best access, while winter brings heavy snowfall.",
+    startDate: "2026-08-20",
+    campers: 3,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Sawtooth Mountains Camp",
+    destination: "Sawtooth National Recreation Area",
+    imgSrc: "images/sawtooth.jpg",
+    imgAlt: "Image of the Sawtooth Mountains",
+    description: "Located in central Idaho, the Sawtooth Mountains offer alpine lakes, mountain peaks, fishing, kayaking, and excellent hiking trails.",
+    availability: "Best visited from late June through September.",
+    startDate: "2026-07-28",
+    campers: 6,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Arches National Park Journey",
+    destination: "Arches National Park",
+    imgSrc: "images/arches.jpg",
+    imgAlt: "Image of Arches National Park",
+    description: "Arches National Park protects more than 2,000 natural sandstone arches along with towering rock formations and desert landscapes.",
+    availability: "Open year-round, with spring and fall being the most popular seasons.",
+    startDate: "2026-10-12",
+    campers: 2,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Redfish Lake Retreat",
+    destination: "Redfish Lake",
+    imgSrc: "images/redfishlake.jpg",
+    imgAlt: "Image of Redfish Lake",
+    description: "Redfish Lake is a popular Idaho destination surrounded by the Sawtooth Mountains, offering camping, boating, kayaking, fishing, and hiking.",
+    availability: "Open during the summer season with limited winter access.",
+    startDate: "2026-07-22",
+    campers: 4,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Yosemite Valley Campout",
+    destination: "Yosemite National Park",
+    imgSrc: "images/yosemite.jpg",
+    imgAlt: "Image of Yosemite National Park",
+    description: "Yosemite National Park is famous for granite cliffs, waterfalls, giant sequoias, and world-class hiking opportunities.",
+    availability: "Open year-round, though some high-elevation roads close in winter.",
+    startDate: "2026-08-08",
+    campers: 5,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Island Park Escape",
+    destination: "Island Park, Idaho",
+    imgSrc: "images/islandpark.jpg",
+    imgAlt: "Image of Island Park",
+    description: "Island Park is known for its beautiful forests, rivers, and easy access to Yellowstone National Park. It's a favorite spot for camping, fishing, and ATV riding.",
+    availability: "Open year-round, with summer being the busiest season.",
+    startDate: "2026-07-18",
+    campers: 5,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Palisades Reservoir Camp",
+    destination: "Palisades Reservoir",
+    imgSrc: "images/palisades.jpg",
+    imgAlt: "Image of Palisades Reservoir",
+    description: "Palisades Reservoir offers boating, fishing, kayaking, and lakeside camping surrounded by mountain scenery along the Idaho-Wyoming border.",
+    availability: "Best visited from late spring through early fall.",
+    startDate: "2026-08-15",
+    campers: 4,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Mesa Falls Weekend",
+    destination: "Mesa Falls Scenic Area",
+    imgSrc: "images/mesafalls.jpg",
+    imgAlt: "Image of Mesa Falls",
+    description: "Mesa Falls features Upper and Lower Mesa Falls with scenic boardwalks, hiking trails, and nearby campgrounds in eastern Idaho.",
+    availability: "Open from spring through fall.",
+    startDate: "2026-07-10",
+    campers: 2,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Craters of the Moon Adventure",
+    destination: "Craters of the Moon National Monument",
+    imgSrc: "images/cratersofthemoon.jpg",
+    imgAlt: "Image of Craters of the Moon",
+    description: "Explore volcanic lava fields, caves, and unique desert landscapes while camping under some of Idaho's darkest night skies.",
+    availability: "Open year-round, weather permitting.",
+    startDate: "2026-09-12",
+    campers: 3,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Henrys Lake Fishing Trip",
+    destination: "Henrys Lake State Park",
+    imgSrc: "images/henryslake.jpg",
+    imgAlt: "Image of Henrys Lake",
+    description: "Henrys Lake is a popular destination for trout fishing, wildlife viewing, and camping with beautiful mountain views.",
+    availability: "Open spring through fall.",
+    startDate: "2026-08-03",
+    campers: 4,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "City of Rocks Camping",
+    destination: "City of Rocks National Reserve",
+    imgSrc: "images/cityofrocks.jpg",
+    imgAlt: "Image of City of Rocks",
+    description: "Known for its massive granite rock formations, City of Rocks is perfect for camping, hiking, climbing, and photography.",
+    availability: "Open year-round.",
+    startDate: "2026-09-25",
+    campers: 3,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Jenny Lake Camp",
+    destination: "Jenny Lake",
+    imgSrc: "images/jennylake.jpg",
+    imgAlt: "Image of Jenny Lake",
+    description: "Located in Grand Teton National Park, Jenny Lake offers spectacular mountain views, hiking trails, boating, and nearby campgrounds.",
+    availability: "Summer through early fall.",
+    startDate: "2026-08-22",
+    campers: 2,
+    type: ["Tent", "RV", "Cabin"]
+},
+{
+    name: "Lava Hot Springs Getaway",
+    destination: "Lava Hot Springs",
+    imgSrc: "images/lavahotsprings.jpg",
+    imgAlt: "Image of Lava Hot Springs",
+    description: "Camp nearby and enjoy natural hot springs, floating the Portneuf River, hiking, and relaxing in one of Idaho's favorite small towns.",
+    availability: "Open year-round.",
+    startDate: "2026-06-20",
+    campers: 4,
+    type: ["Tent", "RV", "Cabin"]
+}
 ]
