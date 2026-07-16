@@ -201,11 +201,11 @@ function addTrip() {
 
                     if (document.body.classList.contains("dark-mode")) {
 
-                            button.textContent = "Light Mode";
+                            button.textContent = "☀️";
 
                         } else {
 
-                            button.textContent = "Dark Mode";
+                            button.textContent = "🌙";
 
                         }
 
