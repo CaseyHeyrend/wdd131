@@ -1,4 +1,7 @@
 import { locations } from "./tripsModel.js";
+import { setupPackingList } from "./form.js";
+
+setupPackingList();
 const trips = [];
 trips.push(
     {

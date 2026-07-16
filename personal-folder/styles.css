@@ -187,7 +187,8 @@ nav a:hover {
 }
 
 .modal-content{
-    background:white;
+    background:var(--card);
+    color:var(--text);
     padding:2rem;
     width:90%;
     max-width:600px;
@@ -253,7 +254,7 @@ nav a:hover {
     max-width: 850px;
     margin: 50px auto;
     padding: 20px;
-    background: white;
+    background: var(--card);
     border-radius: 12px;
 }
 
@@ -281,6 +282,8 @@ button {
     font: inherit;
     border: 2px solid var(--secondary);
     border-radius: 8px;
+    background: var(--card);
+    color: var(--text);
 }
 
 button {
