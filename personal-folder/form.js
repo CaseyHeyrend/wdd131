@@ -52,6 +52,7 @@ const cabinItems = [
 ];
 
 // Select elements
+export function setupPackingList() {
 const campingType = document.querySelector("#campType");
 const packingList = document.querySelector("#packingList");
 
@@ -99,3 +100,4 @@ campingType.addEventListener("change", function () {
     }
 
 });
+}
