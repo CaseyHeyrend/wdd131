@@ -78,7 +78,7 @@ export const locations = {
 },
 yosemite: {
     destination: "Yosemite National Park",
-    imgSrc: "images/yosemite.jpg",
+    imgSrc: "images/yosemite.jpg",//Photo by Kinley Lindsey
     imgAlt: "Image of Yosemite National Park",
     description: "Yosemite National Park is famous for granite cliffs, waterfalls, giant sequoias, and world-class hiking opportunities.",
     availability: "Open year-round, though some high-elevation roads close in winter."
@@ -86,7 +86,7 @@ yosemite: {
 islandPark:{
     destination: "Island Park, Idaho",
     imgSrc: "images/islandpark.jpg",
-    imgAlt: "Image of Island Park",
+    imgAlt: "Image of Island Park",//Photo by Domenico Convertini
     description: "Island Park is known for its beautiful forests, rivers, and easy access to Yellowstone National Park. It's a favorite spot for camping, fishing, and ATV riding.",
     availability: "Open year-round, with summer being the busiest season."
 },
@@ -106,7 +106,7 @@ mesaFalls:{
 },
 cratersOfTheMoon:{
     destination: "Craters of the Moon National Monument",
-    imgSrc: "images/cratersofthemoon.jpg",
+    imgSrc: "images/cratersofthemoon.jpg",//Photo by Vasilis Karkalas 
     imgAlt: "Image of Craters of the Moon",
     description: "Explore volcanic lava fields, caves, and unique desert landscapes while camping under some of Idaho's darkest night skies.",
     availability: "Open year-round, weather permitting."
