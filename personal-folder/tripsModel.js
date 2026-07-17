@@ -99,7 +99,7 @@ palisades: {
 },
 mesaFalls:{
     destination: "Mesa Falls Scenic Area",
-    imgSrc: "images/mesafalls.jpg",
+    imgSrc: "images/MesaFalls.jpg",//Photo by Casey Heyrend
     imgAlt: "Image of Mesa Falls",
     description: "Mesa Falls features Upper and Lower Mesa Falls with scenic boardwalks, hiking trails, and nearby campgrounds in eastern Idaho.",
     availability: "Open from spring through fall."
