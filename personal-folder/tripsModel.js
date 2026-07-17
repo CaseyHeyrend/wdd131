@@ -99,7 +99,7 @@ palisades: {
 },
 mesaFalls:{
     destination: "Mesa Falls Scenic Area",
-    imgSrc: "images/MesaFalls.jpg",//Photo by Casey Heyrend
+    imgSrc: "images/mesafalls.jpg",//Photo by Casey Heyrend
     imgAlt: "Image of Mesa Falls",
     description: "Mesa Falls features Upper and Lower Mesa Falls with scenic boardwalks, hiking trails, and nearby campgrounds in eastern Idaho.",
     availability: "Open from spring through fall."
@@ -113,7 +113,7 @@ cratersOfTheMoon:{
 },
 henrysLake:{
     destination: "Henrys Lake State Park",
-    imgSrc: "images/henryslake.jpg",
+    imgSrc: "images/henryslake.jpg",//Photo by Casey Heyrend
     imgAlt: "Image of Henrys Lake",
     description: "Henrys Lake is a popular destination for trout fishing, wildlife viewing, and camping with beautiful mountain views.",
     availability: "Open spring through fall."
