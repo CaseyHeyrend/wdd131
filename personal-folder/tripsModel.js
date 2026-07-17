@@ -127,7 +127,7 @@ cityOfRocks:{
 },
 jennyLake:{
     destination: "Jenny Lake",
-    imgSrc: "images/jennylake.jpg",
+    imgSrc: "images/jennylake.jpg",//Photo by Carsten Steger
     imgAlt: "Image of Jenny Lake",
     description: "Located in Grand Teton National Park, Jenny Lake offers spectacular mountain views, hiking trails, boating, and nearby campgrounds.",
     availability: "Summer through early fall."
