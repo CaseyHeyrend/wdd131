@@ -29,49 +29,49 @@ export const locations = {
     },
     glacier: {
     destination: "Glacier National Park",
-    imgSrc: "images/glacier.jpg",
+    imgSrc: "images/glacier.jpg",//Photo by Dinesh kumar Ramasamy 
     imgAlt: "Image of Glacier National Park",
     description: "Glacier National Park in Montana is known for its rugged mountains, crystal-clear lakes, scenic drives, and abundant wildlife. Visitors enjoy hiking, camping, and photography.",
     availability: "Late spring through early fall is the most accessible season."
 },
     zion:  {
     destination: "Zion National Park",
-    imgSrc: "images/zion.jpg",
+    imgSrc: "images/zion.jpg",//Photo by dumitru B
     imgAlt: "Image of Zion National Park",
     description: "Zion National Park features towering sandstone cliffs, narrow slot canyons, and scenic hiking trails like Angels Landing and The Narrows.",
     availability: "Open year-round, with spring and fall offering the most comfortable temperatures."
 },
     bryceCanyon: {
     destination: "Bryce Canyon National Park",
-    imgSrc: "images/bryce.jpg",
+    imgSrc: "images/bryce.jpg",//Photo by Vasilis Karkalas 
     imgAlt: "Image of Bryce Canyon National Park",
     description: "Bryce Canyon is famous for its colorful hoodoos, dark night skies, and breathtaking viewpoints. It's a favorite destination for hiking and stargazing.",
     availability: "Open year-round, though snow is possible during winter."
 },
     craterLake: {
     destination: "Crater Lake National Park",
-    imgSrc: "images/craterlake.jpg",
+    imgSrc: "images/craterlake.jpg",//Photo by Brett Sayles
     imgAlt: "Image of Crater Lake National Park",
     description: "Crater Lake is the deepest lake in the United States and is famous for its incredibly blue water and scenic rim drive.",
     availability: "Summer offers the best access, while winter brings heavy snowfall."
 },
     sawtoothMountains: {
     destination: "Sawtooth National Recreation Area",
-    imgSrc: "images/sawtooth.jpg",
+    imgSrc: "images/sawtooth.jpg",//Photo by Acroterion
     imgAlt: "Image of the Sawtooth Mountains",
     description: "Located in central Idaho, the Sawtooth Mountains offer alpine lakes, mountain peaks, fishing, kayaking, and excellent hiking trails.",
     availability: "Best visited from late June through September."
 },
     arches: {
     destination: "Arches National Park",
-    imgSrc: "images/arches.jpg",
+    imgSrc: "images/arches.jpg",//Photo by Ken Cheung
     imgAlt: "Image of Arches National Park",
     description: "Arches National Park protects more than 2,000 natural sandstone arches along with towering rock formations and desert landscapes.",
     availability: "Open year-round, with spring and fall being the most popular seasons."
 },
     redfishLake: {
     destination: "Redfish Lake",
-    imgSrc: "images/redfishlake.jpg",
+    imgSrc: "images/redfishlake.jpg",//Photo by HalcyonToast
     imgAlt: "Image of Redfish Lake",
     description: "Redfish Lake is a popular Idaho destination surrounded by the Sawtooth Mountains, offering camping, boating, kayaking, fishing, and hiking.",
     availability: "Open during the summer season with limited winter access."
@@ -85,8 +85,8 @@ yosemite: {
 },
 islandPark:{
     destination: "Island Park, Idaho",
-    imgSrc: "images/islandpark.jpg",
-    imgAlt: "Image of Island Park",//Photo by Domenico Convertini
+    imgSrc: "images/islandpark.jpg",//Photo by Domenico Convertini
+    imgAlt: "Image of Island Park",
     description: "Island Park is known for its beautiful forests, rivers, and easy access to Yellowstone National Park. It's a favorite spot for camping, fishing, and ATV riding.",
     availability: "Open year-round, with summer being the busiest season."
 },
@@ -134,7 +134,7 @@ jennyLake:{
 },
 lavaHotSprings:{
     destination: "Lava Hot Springs",
-    imgSrc: "images/lavahotsprings.jpg",
+    imgSrc: "images/lavahotsprings.jpg",//Photo by fishermansdaughter
     imgAlt: "Image of Lava Hot Springs",
     description: "Camp nearby and enjoy natural hot springs, floating the Portneuf River, hiking, and relaxing in one of Idaho's favorite small towns.",
     availability: "Open year-round."
