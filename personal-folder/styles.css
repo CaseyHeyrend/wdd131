@@ -360,11 +360,12 @@ footer {
     }
 
     #tripForm {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
 
+
     .full {
-        grid-column: 1;
+        grid-column: 1 / 3;
     }
 
 
