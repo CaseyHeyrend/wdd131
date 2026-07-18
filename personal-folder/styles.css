@@ -259,7 +259,7 @@ nav a:hover {
 .field {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: .25rem;
 }
 
 .full {
@@ -360,7 +360,7 @@ footer {
     }
 
     #tripForm {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 
     .full {
