@@ -36,9 +36,7 @@
     <main>
 
       <section class="hero">
-
-        <img src="images/pexels-mazinomron-36696293.jpg"
-        alt="Tent in the mountains">
+        <img src="images/tentinthewoods.jpg" alt="Tent in the woods"><!--Vitali Adutskevich-->
 
         <div class="hero-text">
         <h2>Your Next Adventure</h2>
@@ -52,14 +50,14 @@
         <button type="submit" aria-label="Search trips">
           <img src="images/search.svg" alt="Search">
         </button></form>
-        <button id="addTripButton">
+        <button id="addTripButton" aria-label="Add a new camping trip">
           <img src="images/plus.svg" alt="Add Trip">
         </button>
 
 
 
 
-        <section class="trip-container">
+        <section class="trip-container" aria-label="List of camping trips">
 
         </section>
 
@@ -73,12 +71,12 @@
             <form id="tripForm">
 
               <div class="field full">
-              <label for="tripName">Trip Name</label>
+              <label for="tripName" aria-label="Trip Name">Trip Name</label>
                 <input type="text" id="tripName" required>
               </div>
 
               <div class="field full">
-              <label for="destination">Destination</label>
+              <label for="destination" aria-label="Destination">Destination</label>
                 <select id="destination" required>
                 <option value="">Choose one</option>
                 <option value="yellowstone">Yellowstone National Park</option>
@@ -105,17 +103,17 @@
               </div>
 
               <div class="field">
-              <label for="startDate">Start Date</label>
+              <label for="startDate" aria-label="Start Date">Start Date</label>
                 <input type="date" id="startDate">
               </div>
 
               <div class="field">
-              <label for="campers">Campers</label>
+              <label for="campers" aria-label="Number of Campers">Campers</label>
                 <input type="number" id="campers">
               </div>
 
               <div class="field full">
-              <label for="campType">Camping Type</label>
+              <label for="campType" aria-label="Camping Type">Camping Type</label>
                 <select id="campType">
                 <option value="">Choose One</option>
                 <option value="Tent">Tent</option>
@@ -126,7 +124,7 @@
 
               <div class="field full">
               <h3>Packing List</h3>
-              <div id="packingList"></div>
+              <div id="packingList" aria-label="Packing List"></div>
               </div>
 
             <button class="full" type="submit">Add Trip</button>

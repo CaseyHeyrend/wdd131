@@ -81,23 +81,12 @@
 
                 <div class="field">
                 <label for="endDate" aria-label="End Date">End Date</label>
-
-                    <input
-                    type="date"
-                    id="endDate"
-                    name="endDate"
-                    required>
+                    <input type="date" id="endDate" name="endDate" required>
                 </div>
 
                 <div class="field">
                 <label for="campers" aria-label="Number of Campers">Number of Campers</label>
-
-                    <input
-                    type="number"
-                    id="campers"
-                    name="campers"
-                    min="1"
-                    required>
+                    <input type="number" id="campers" name="campers" min="1" required>
                 </div>
 
                 <div class="field">
@@ -112,19 +101,18 @@
 
                 <div class="field full">
                 <h3>Packing List</h3>
-                <div id="packingList"></div>
+                <div id="packingList" aria-label="Packing List"></div>
 
                 </div>
 
                 <div class="field full">
                 <label for="notes">Notes</label>
-                <textarea id="notes" placeholder="Additional trip notes..."></textarea>
+                <textarea id="notes" aria-label="Trip Notes" placeholder="Additional trip notes..."></textarea>
                 </div>
 
                 <button class="full" type="submit">
                     Add Trip
                 </button>
-
             </form>
 
         </main>
