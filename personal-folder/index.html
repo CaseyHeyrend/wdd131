@@ -44,96 +44,102 @@
         </div>
 
       </section>
-      <form class="search">
+      <div class="search">
       <label for="search" class="sr-only">Search trips</label>
         <input type="text" id="search" placeholder="Search trips">
-        <button type="submit" aria-label="Search trips">
+        <button type="button" aria-label="Search trips">
           <img src="images/search.svg" alt="Search">
-        </button></form>
-        <button id="addTripButton" aria-label="Add a new camping trip">
-          <img src="images/plus.svg" alt="Add Trip">
         </button>
+      </div>
+      <button id="addTripButton" aria-label="Add a new camping trip">
+        <img src="images/plus.svg" alt="Add Trip">
+      </button>
 
 
 
 
-        <section class="trip-container" aria-label="List of camping trips">
+      <section class="trip-container" aria-label="List of camping trips">
 
-        </section>
+      </section>
 
 
-        <div id="tripModal" class="modal">
-          <div class="modal-content">
-          <span id="closeModal">&times;</span>
+      <div id="tripModal" class="modal">
+        <div class="modal-content">
+        <button id="closeModal" aria-label="Close add trip form">&times;</button>
 
-          <h2>Add Trip</h2>
+        <h2>Add Trip</h2>
 
-            <form id="tripForm">
+          <form id="tripForm">
 
-              <div class="field full">
-              <label for="tripName">Trip Name</label>
-                <input type="text" id="tripName" required>
-              </div>
+            <div class="field full">
+            <label for="tripName">Trip Name</label>
+              <input type="text" id="tripName" required>
+            </div>
 
-              <div class="field full">
-              <label for="destination">Destination</label>
-                <select id="destination" required>
-                <option value="">Choose one</option>
-                <option value="yellowstone">Yellowstone National Park</option>
-                <option value="grandTeton">Teton Valley</option>
-                <option value="uintaMountains">Uinta Mountains</option>
-                <option value="bearLake">Bear Lake</option>
-                <option value="glacier">Glacier National Park</option>
-                <option value="zion">Zion National Park</option>
-                <option value="bryceCanyon">Bryce Canyon National Park</option>
-                <option value="craterLake">Crater Lake National Park</option>
-                <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
-                <option value="arches">Arches National Park</option>
-                <option value="redfishLake">Redfish Lake</option>
-                <option value="yosemite">Yosemite National Park</option>
-                <option value="islandPark">Island Park</option>
-                <option value="palisades">Palisades Reservoir</option>
-                <option value="mesaFalls">Mesa Falls Scenic Area</option>
-                <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
-                <option value="henrysLake">Henrys Lake State Park</option>
-                <option value="cityOfRocks">City of Rocks National Reserve</option>
-                <option value="jennyLake">Jenny Lake</option>
-                <option value="lavaHotSprings">Lava Hot Springs</option>
-                </select>
-              </div>
+            <div class="field full">
+            <label for="destination">Destination</label>
+              <select id="destination" required>
+              <option value="">Choose one</option>
+              <option value="yellowstone">Yellowstone National Park</option>
+              <option value="grandTeton">Teton Valley</option>
+              <option value="uintaMountains">Uinta Mountains</option>
+              <option value="bearLake">Bear Lake</option>
+              <option value="glacier">Glacier National Park</option>
+              <option value="zion">Zion National Park</option>
+              <option value="bryceCanyon">Bryce Canyon National Park</option>
+              <option value="craterLake">Crater Lake National Park</option>
+              <option value="sawtoothMountains">Sawtooth National Recreation Area</option>
+              <option value="arches">Arches National Park</option>
+              <option value="redfishLake">Redfish Lake</option>
+              <option value="yosemite">Yosemite National Park</option>
+              <option value="islandPark">Island Park</option>
+              <option value="palisades">Palisades Reservoir</option>
+              <option value="mesaFalls">Mesa Falls Scenic Area</option>
+              <option value="cratersOfTheMoon">Craters of the Moon National Monument</option>
+              <option value="henrysLake">Henrys Lake State Park</option>
+              <option value="cityOfRocks">City of Rocks National Reserve</option>
+              <option value="jennyLake">Jenny Lake</option>
+              <option value="lavaHotSprings">Lava Hot Springs</option>
+              </select>
+            </div>
 
-              <div class="field">
-              <label for="startDate">Start Date</label>
-                <input type="date" id="startDate">
-              </div>
+            <div class="field">
+            <label for="startDate">Start Date</label>
+              <input type="date" id="startDate">
+            </div>
+            
+            <div class="field">
+            <label for="endDate">End Date</label>
+              <input type="date" id="endDate">
+            </div>
 
-              <div class="field">
-              <label for="campers">Campers</label>
-                <input type="number" id="campers">
-              </div>
+            <div class="field">
+            <label for="campers">Campers</label>
+              <input type="number" id="campers">
+            </div>
 
-              <div class="field full">
-              <label for="campType">Camping Type</label>
-                <select id="campType">
-                <option value="">Choose One</option>
-                <option value="Tent">Tent</option>
-                <option value="RV">RV</option>
-                <option value="Cabin">Cabin</option>
-                </select>
-              </div>
+            <div class="field full">
+            <label for="campType">Camping Type</label>
+              <select id="campType">
+              <option value="">Choose One</option>
+              <option value="Tent">Tent</option>
+              <option value="RV">RV</option>
+              <option value="Cabin">Cabin</option>
+              </select>
+            </div>
 
-            <button class="full" type="submit">Add Trip</button>
+          <button class="full" type="submit">Add Trip</button>
 
-            </form>
-          </div>
+          </form>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer>
+    <footer>
 
-      <p>&copy; 2026 Casey Heyrend | WDD 131</p>
+    <p>&copy; 2026 Casey Heyrend | WDD 131</p>
 
-      </footer>
+    </footer>
 
-    </body>
-  </html>
+  </body>
+</html>

@@ -174,8 +174,8 @@ function addTrip() {
                     imgAlt: location.imgAlt,
                     description: location.description,
                     availability: location.availability,
-
                     startDate: document.querySelector("#startDate").value,
+                    endDate: document.querySelector("#endDate").value,
                     campers: document.querySelector("#campers").value,
                     type: document.querySelector("#campType").value
                 };
