@@ -53,51 +53,57 @@ const cabinItems = [
 
 // Select elements
 export function setupPackingList() {
-const campingType = document.querySelector("#campType");
-const packingList = document.querySelector("#packingList");
+    const campingType = document.querySelector("#campType");
+    const packingList = document.querySelector("#packingList");
+    const packingSection = document.querySelector("#packingSection");
 
-// Display checklist
-function displayPackingList(items) {
+    // Display checklist
+    function displayPackingList(items) {
 
-    packingList.innerHTML = "";
+            packingList.innerHTML = "";
 
-    items.forEach(item => {
+            items.forEach(item => {
 
-        const label = document.createElement("label");
+                const label = document.createElement("label");
 
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.value = item;
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.value = item;
 
-        label.appendChild(checkbox);
-        label.append(` ${item}`);
+                label.appendChild(checkbox);
+                label.append(` ${item}`);
 
-        packingList.appendChild(label);
+                packingList.appendChild(label);
 
-    });
-
-}
-
-// Change list when camping type changes
-campingType.addEventListener("change", function () {
-
-    if (campingType.value === "Tent") {
-
-        displayPackingList(tentItems);
-
-    } else if (campingType.value === "RV") {
-
-        displayPackingList(rvItems);
-
-    } else if (campingType.value === "Cabin") {
-
-        displayPackingList(cabinItems);
-
-    } else {
-
-        packingList.innerHTML = "";
+        });
 
     }
+    
 
-});
+    // Change list when camping type changes
+    campingType.addEventListener("change", function () {
+
+        if (campingType.value === "Tent") {
+
+                packingSection.style.display = "block";
+                displayPackingList(tentItems);
+
+            } else if (campingType.value === "RV") {
+
+                packingSection.style.display = "block";
+                displayPackingList(rvItems);
+
+            } else if (campingType.value === "Cabin") {
+
+                packingSection.style.display = "block";
+                displayPackingList(cabinItems);
+
+            } else {
+
+                packingSection.style.display = "none";
+                packingList.innerHTML = "";
+
+            }
+
+    });
 }

@@ -58,35 +58,35 @@ function displayTrips(tripList) {
 
             <p><strong>Camping Type:</strong> ${trip.type}</p>
 
-        <button class="deleteBtn" data-index="${index}">Delete</button>
-            `;
+            <button class="deleteBtn" data-index="${index}">Delete</button>
+                `;
 
-            container.appendChild(card);
-
-    });
-
-    addDeleteEvents();
-
-}
-
-// Delete trip
-function addDeleteEvents() {
-
-        const buttons = document.querySelectorAll(".deleteBtn");
-
-        buttons.forEach(button => {
-
-            button.addEventListener("click", function () {
-
-                const index = this.dataset.index;
-
-                trips.splice(index, 1);
-
-                displayTrips(trips);
+                container.appendChild(card);
 
         });
 
-});
+        addDeleteEvents();
+
+    }
+
+    // Delete trip
+    function addDeleteEvents() {
+
+            const buttons = document.querySelectorAll(".deleteBtn");
+
+            buttons.forEach(button => {
+
+                button.addEventListener("click", function () {
+
+                    const index = this.dataset.index;
+
+                    trips.splice(index, 1);
+
+                    displayTrips(trips);
+
+            });
+
+    });
 
 }
 
@@ -183,45 +183,56 @@ function addTrip() {
                 trips.push(trip);
 
                 displayTrips(trips);
+                // Show confirmation message
+                const message = document.querySelector("#tripMessage");
+                if (message) {
+                        message.hidden = false;
 
-                form.reset();
+                        setTimeout(() => {
+                            message.hidden = true;
+                        }, 3000);
+                    }
 
-                modal.style.display = "none";
+                    form.reset();
 
-        });
-
-    }
-
-    // Dark Mode
-    function darkMode() {
-
-            const button = document.querySelector("#darkMode");
-
-            if (!button) return;
-
-                button.addEventListener("click", () => {
-
-                    document.body.classList.toggle("dark-mode");
-
-                    if (document.body.classList.contains("dark-mode")) {
-
-                            button.textContent = "☀️";
-
-                        } else {
-
-                            button.textContent = "🌙";
-
+                    if (modal) {
+                            modal.style.display = "none";
                         }
 
                 });
 
             }
 
-            // Start
-            displayTrips(trips);
+            // Dark Mode
+            function darkMode() {
 
-            searchTrips();
+                    const button = document.querySelector("#darkMode");
 
-            addTrip();
+                    if (!button) return;
 
-            darkMode();
+                        button.addEventListener("click", () => {
+
+                            document.body.classList.toggle("dark-mode");
+
+                            if (document.body.classList.contains("dark-mode")) {
+
+                                    button.textContent = "☀️";
+
+                                } else {
+
+                                    button.textContent = "🌙";
+
+                                }
+
+                        });
+
+                    }
+
+                    // Start
+                    displayTrips(trips);
+
+                    searchTrips();
+
+                    addTrip();
+
+                    darkMode();
